@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMotsClesArticlesTable extends Migration
+class CreateUtilisateursTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,11 +12,14 @@ class CreateMotsClesArticlesTable extends Migration
      * @return void
      */
     public function up()
+
     {
-        Schema::create('MotsClesArticles', function (Blueprint $table) {
+        Schema::create('Utilisateurs', function (Blueprint $table) {
             $table->id();
-            $table->foreign('motcle_id')->references('id')->on('MotsCles');
-            $table->foreign('article_id')->references('id')->on('Articles');
+            $table->string('nom');
+            $table->string('email')->unique();
+            $table->string('motdepasse');
+            $table->rememberToken();
             $table->timestamps();
         });
     }
@@ -28,6 +31,6 @@ class CreateMotsClesArticlesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('MotsClesArticles');
+        Schema::dropIfExists('users');
     }
 }
