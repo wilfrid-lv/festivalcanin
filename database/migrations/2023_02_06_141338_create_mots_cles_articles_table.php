@@ -15,8 +15,8 @@ class CreateMotsClesArticlesTable extends Migration
     {
         Schema::create('MotsClesArticles', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('motcle_id');
-            $table->foreignId('article_id');
+            $table->foreignId('motcle_id')->constrained('MotsCles');
+            $table->foreignId('article_id')->constrained('Articles');
             $table->timestamps();
         });
     }
