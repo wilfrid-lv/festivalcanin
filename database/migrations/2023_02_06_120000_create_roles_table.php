@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAuteursTable extends Migration
+class CreateRolesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,17 @@ class CreateAuteursTable extends Migration
      */
     public function up()
     {
-        Schema::create('Auteurs', function (Blueprint $table) {
+        Schema::create('Roles', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
-            $table->text('description');
-            $table->string('photo');
-            $table->string('adresse');
-            $table->string('ville');
             $table->timestamps();
-            //manque les fkeys
         });
+
+        DB::table('Roles')->insert(
+            array(
+                'nom' => 'admin'
+            )
+        );
     }
 
     /**
@@ -32,6 +33,6 @@ class CreateAuteursTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Auteurs');
+        Schema::dropIfExists('Roles');
     }
 }

@@ -19,7 +19,7 @@ class CreateArticlesTable extends Migration
             $table->text('contenu');
             $table->boolean('approuve');
             //$table->foreign('auteur_id')->references('id')->on('Auteurs');
-            $table->foreignId('auteur_id');
+            $table->foreignId('auteur_id')->constrained('Auteurs');
             $table->timestamps();
         });
     }
@@ -31,6 +31,8 @@ class CreateArticlesTable extends Migration
      */
     public function down()
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         Schema::dropIfExists('Articles');
+        DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
 }

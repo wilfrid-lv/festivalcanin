@@ -13,8 +13,12 @@ class CreateCommentairesTable extends Migration
      */
     public function up()
     {
-        Schema::create('commentaires', function (Blueprint $table) {
+        Schema::create('Commentaires', function (Blueprint $table) {
             $table->id();
+            $table->text('contenu');
+            $table->string('nom');
+            $table->string('courriel');
+            $table->foreignId('article_id')->constrained('Articles');
             $table->timestamps();
         });
     }
@@ -26,6 +30,8 @@ class CreateCommentairesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('commentaires');
+        DB::statement('SET FOREIGN_KEY_CHECKS = 0');
+        Schema::dropIfExists('Commentaires');
+        DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
 }
