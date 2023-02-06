@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAuteursTable extends Migration
+class CreateExposantsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,14 @@ class CreateAuteursTable extends Migration
      */
     public function up()
     {
-        Schema::create('Auteurs', function (Blueprint $table) {
+        Schema::create('Exposants', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
+            $table->string('pathImage');
+            $table->string('lien');
             $table->text('description');
-            $table->string('photo');
-            $table->string('adresse');
-            $table->string('ville');
+            $table->foreignId('utilisateur_id')->constrained('Utilisateurs');
             $table->timestamps();
-            //manque les fkeys
         });
     }
 
@@ -32,6 +31,6 @@ class CreateAuteursTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Auteurs');
+        Schema::dropIfExists('Exposants');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateImagesArticlesTable extends Migration
+class CreateAuteursTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,14 @@ class CreateImagesArticlesTable extends Migration
      */
     public function up()
     {
-        Schema::create('ImagesArticles', function (Blueprint $table) {
+        Schema::create('Auteurs', function (Blueprint $table) {
             $table->id();
-            $table->string('path');
-            $table->foreignId('article_id')->constrained('Articles');
+            $table->string('nom');
+            $table->text('description');
+            $table->string('photo');
+            $table->string('adresse');
+            $table->string('ville');
+            $table->foreignId('utilisateur_id')->constrained('Utilisateurs');
             $table->timestamps();
         });
     }
@@ -28,6 +32,6 @@ class CreateImagesArticlesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ImagesArticles');
+        Schema::dropIfExists('Auteurs');
     }
 }
