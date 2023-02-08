@@ -10,13 +10,13 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-        <li><a class="nav-link scrollto" href="/accueil">Accueil</a></li>
+        <li><a class="nav-link scrollto" href="/">Accueil</a></li>
           <li><a class="nav-link scrollto" href="/aPropos">À propos</a></li>
           <li><a class="nav-link scrollto" href="/activites">Activités</a></li>
           <li><a class="nav-link scrollto" href="/exposants">Nos exposants</a></li>
           <li><a class="nav-link scrollto" href="/horaire">Horaire</a></li>
           <li><a class="nav-link scrollto" href="/gallerie">Gallerie</a></li>
-          <li><a class="nav-link scrollto" href="/partenaire">Partenaires</a></li>
+          <li><a class="nav-link scrollto" href="/partenaires">Partenaires</a></li>
           <li><a class="nav-link scrollto" href="/contact">Contact</a></li>
         </ul>
 
