@@ -56,7 +56,7 @@
           <li><a class="nav-link scrollto" href="/exposants">Nos exposants</a></li>
           <li><a class="nav-link scrollto" href="/horaire">Horaire</a></li>
           <li><a class="nav-link scrollto" href="/gallerie">Gallerie</a></li>
-          <li><a class="nav-link scrollto" href="/partenaire">Partenaires</a></li>
+          <li><a class="nav-link scrollto" href="/partenaires">Partenaires</a></li>
           <li><a class="nav-link scrollto" href="/contact">Contact</a></li>
         </ul>
 
@@ -99,11 +99,12 @@
     </section><!-- End About Section -->
 
     <!-- ======= Speakers Section ======= -->
+
     <section id="speakers">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Nos exposants</h2>
-
+          <p>Voici les exposants qui seront présent lors de notre festival</p>
         </div>
 
         <div class="row">
@@ -425,7 +426,7 @@
 
   @include('partials.footer')
 
-
+  
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <script src="{{asset('template/assets/vendor/aos/aos.js') }}"></script>
