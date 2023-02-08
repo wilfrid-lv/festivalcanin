@@ -98,7 +98,7 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Nos exposants</h2>
-          <p>Here are some of our speakers</p>
+
         </div>
 
         <div class="row">
