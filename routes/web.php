@@ -31,7 +31,7 @@ Route::get('/welcome', function () {
 |--------------------------------------------------------------------------
 */
 
-Route::get('/accueil', function () {
+Route::get('/', function () {
     return view('accueil');
 });
 
