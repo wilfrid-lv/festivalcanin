@@ -31,6 +31,7 @@
 <body>
 
   <!-- ======= Header ======= -->
+
   <header id="header" class="d-flex align-items-center ">
     <div class="container-fluid container-xxl d-flex align-items-center">
 
@@ -96,7 +97,7 @@
     <section id="speakers">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Event Speakers</h2>
+          <h2>Nos exposants</h2>
           <p>Here are some of our speakers</p>
         </div>
 
