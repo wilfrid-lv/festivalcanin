@@ -23,6 +23,19 @@ class CreateInformationsTable extends Migration
             $table->string('lienVideo');
             $table->timestamps();
         });
+
+        DB::table('Informations')->insert(
+            array(
+                //date debut 27 aout 2023
+                'dateDebut' => '2023-08-26',
+                'dateFin' => '2023-08-27',
+                'description' => 'Le Festival Canin est un festival comportant plusieurs chiens',
+                'resume' => 'voici un court résumé comportant plusieurs chiens',
+                'imageAccueil' => 'imageAccueil',
+                'lienVideo' => 'lienVideo'
+            )
+        );
+
     }
 
     /**
