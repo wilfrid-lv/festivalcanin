@@ -22,7 +22,7 @@
 
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a class="buy-tickets scrollto" href="https://lepointdevente.com/" target="_blank">Achetez votre place</a>
+      <a class="buy-tickets scrollto" href="https://lepointdevente.com/" target="_blank">Achetez votre billet</a>
 
     </div>
   </header><!-- End Header -->
@@ -30,6 +30,6 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-      
+
     </div>
   </section><!-- End Hero Section -->
