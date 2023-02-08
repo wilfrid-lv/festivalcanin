@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Informations;
+use App\Models\Information;
 
 class InformationsController extends Controller
 {
     public function accueil(){
-        $information = Informations::first();
-        dd($information);
+        $information = Information::first();
+        return view('accueil', ['information' => $information]);
     }
     //
 }

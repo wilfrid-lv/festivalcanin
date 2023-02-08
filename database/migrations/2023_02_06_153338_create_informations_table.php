@@ -18,7 +18,10 @@ class CreateInformationsTable extends Migration
             $table->date('dateDebut');
             $table->date('dateFin');
             $table->text('description');
+            $table->string('noTelephoneContact');
+            $table->string('courrielContact');
             $table->string('resume');
+            $table->string('adresse');
             $table->string('imageAccueil');
             $table->string('lienVideo');
             $table->timestamps();
@@ -30,7 +33,10 @@ class CreateInformationsTable extends Migration
                 'dateDebut' => '2023-08-26',
                 'dateFin' => '2023-08-27',
                 'description' => 'Le Festival Canin est un festival comportant plusieurs chiens',
+                'noTelephoneContact' => '418-750-2816',
+                'courrielContact' => 'courrielcontact@gmail.com',
                 'resume' => 'voici un court résumé comportant plusieurs chiens',
+                'adresse' => '515, de la Briquette, Dégelis, QC, Canada',
                 'imageAccueil' => 'imageAccueil',
                 'lienVideo' => 'lienVideo'
             )

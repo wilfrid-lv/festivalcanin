@@ -13,9 +13,9 @@
     <div class="col-md-4">
       <div class="contact-address">
         <i class="bi bi-geo-alt"></i>
-        <h3>Addresse</h3>
+        <h3>Adresse</h3>
         <address>
-            515, de la Briquette, Dégelis, QC, Canada 
+            {{$information->adresse}}
         </address>
       </div>
     </div>
@@ -24,7 +24,7 @@
       <div class="contact-phone">
         <i class="bi bi-phone"></i>
         <h3>Numéro de téléphone</h3>
-        <p><a href="tel:+155895548855">+1 (418) 750-2816 </a></p>
+        <p>{{$information->noTelephoneContact}}</p>
       </div>
     </div>
 
@@ -32,7 +32,7 @@
       <div class="contact-email">
         <i class="bi bi-envelope"></i>
         <h3>Email</h3>
-        <p><a href="mailto:saloncanindegelis@gmail.com">saloncanindegelis@gmail.com</a></p>
+        <p><a href="mailto:{{$information->courrielContact}}">{{$information->courrielContact}}</a></p>
       </div>
     </div>
 

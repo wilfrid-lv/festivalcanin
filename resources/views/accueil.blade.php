@@ -77,9 +77,7 @@
         <div class="row">
           <div class="col-lg-6">
             <h2>À propos du Festival Canin</h2>
-            <p>Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut
-              accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in
-              est ut optio sequi unde.</p>
+            <p>{{$information->resume}}</p>
           </div>
           <div class="col-lg-3">
             <h3>Où ?</h3>

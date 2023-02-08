@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\InformationsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,9 +32,7 @@ Route::get('/welcome', function () {
 |--------------------------------------------------------------------------
 */
 
-Route::get('/', function () {
-    return view('accueil');
-});
+Route::get('/', [InformationsController::class, 'accueil']);
 
 Route::get('/aPropos', function () {
     return view('aPropos');
