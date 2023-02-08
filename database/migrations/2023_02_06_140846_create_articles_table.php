@@ -19,7 +19,7 @@ class CreateArticlesTable extends Migration
             $table->text('contenu');
             $table->boolean('approuve');
             //$table->foreign('auteur_id')->references('id')->on('Auteurs');
-            $table->foreignId('auteur_id')->constrained('Auteurs');
+            $table->foreignId('eleveur_id')->constrained('Eleveurs');
             $table->timestamps();
         });
     }
