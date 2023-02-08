@@ -16,7 +16,10 @@ use Illuminate\Database\Eloquent\Model;
  * @property Carbon $dateDebut
  * @property Carbon $dateFin
  * @property string $description
+ * @property string $noTelephoneContact
+ * @property string $courrielContact
  * @property string $resume
+ * @property string $adresse
  * @property string $imageAccueil
  * @property string $lienVideo
  * @property Carbon|null $created_at
@@ -37,7 +40,10 @@ class Information extends Model
 		'dateDebut',
 		'dateFin',
 		'description',
+		'noTelephoneContact',
+		'courrielContact',
 		'resume',
+		'adresse',
 		'imageAccueil',
 		'lienVideo'
 	];

@@ -15,10 +15,12 @@ class CreateImagesArticlesTable extends Migration
     {
         Schema::create('ImagesArticles', function (Blueprint $table) {
             $table->id();
-            $table->string('path');
+            $table->string('imagePath');
             $table->foreignId('article_id')->constrained('Articles');
             $table->timestamps();
         });
+
+
     }
 
     /**

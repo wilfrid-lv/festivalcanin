@@ -16,7 +16,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $id
  * @property string $titre
  * @property string $description
- * @property string $image
+ * @property string $imagePath
  * @property string $lienInscription
  * @property Carbon $date
  * @property int $typeActivite_id
@@ -43,7 +43,7 @@ class Activite extends Model
 	protected $fillable = [
 		'titre',
 		'description',
-		'image',
+		'imagePath',
 		'lienInscription',
 		'date',
 		'typeActivite_id'

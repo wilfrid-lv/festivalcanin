@@ -17,7 +17,7 @@ class CreateActivitesTable extends Migration
             $table->id();
             $table->string('titre');
             $table->text('description');
-            $table->string('image');
+            $table->string('imagePath');
             $table->string('lienInscription');
             $table->date('date');
             $table->foreignId('typeActivite_id')->constrained('TypeActivites');

@@ -27,7 +27,6 @@ class FooterServiceProvider extends ServiceProvider
     {
         //
         View::composer('partials.footer', function ($view) {
-
             $view->with('information', Information::first());
         });
     }
