@@ -32,7 +32,7 @@
       <div class="contact-email">
         <i class="bi bi-envelope"></i>
         <h3>Email</h3>
-        <p><a href="mailto:info@example.com">saloncanindegelis@gmail.com</a></p>
+        <p><a href="mailto:saloncanindegelis@gmail.com">saloncanindegelis@gmail.com</a></p>
       </div>
     </div>
 
