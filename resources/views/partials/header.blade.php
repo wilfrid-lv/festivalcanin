@@ -10,7 +10,7 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-        <li><a class="nav-link scrollto" href="/accueil">Accueil</a></li>
+        <li><a class="nav-link scrollto" href="/">Accueil</a></li>
           <li><a class="nav-link scrollto" href="/aPropos">À propos</a></li>
           <li><a class="nav-link scrollto" href="/activites">Activités</a></li>
           <li><a class="nav-link scrollto" href="/exposants">Nos exposants</a></li>

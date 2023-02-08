@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  
+
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -32,16 +32,16 @@
 
 <body>
 
- 
+
 
 <div class = "container">
 
 
-  @yield("content") 
-  
+  @yield("content")
+
 
  </div> <!-- end of container -->
-  
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

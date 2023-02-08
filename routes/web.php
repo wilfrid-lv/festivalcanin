@@ -34,6 +34,10 @@ Route::get('/welcome', function () {
 
 Route::get('/', [InformationsController::class, 'accueil']);
 
+Route::get('/footer', function () {
+    return view('partials.footer');
+});
+
 Route::get('/aPropos', function () {
     return view('aPropos');
 });

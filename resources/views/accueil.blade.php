@@ -81,7 +81,7 @@
           </div>
           <div class="col-lg-3">
             <h3>Où ?</h3>
-            <p>Downtown Conference Center, New York</p>
+            <p>{{$information->adresse}}</p>
           </div>
           <div class="col-lg-3">
             <h3>Quand</h3>
@@ -292,7 +292,7 @@
                 <div class="speaker">
                   <img src="assets/img/speakers/6.jpg" alt="Willow Trantow">
                 </div>
-                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                <h4>Quo quiaffichage frontend dynamiques, modification BD praesentium nesciunt <span>Willow Trantow</span></h4>
                 <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
               </div>
             </div>
