@@ -12,16 +12,17 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Activite
- * 
+ *
  * @property int $id
  * @property string $titre
  * @property string $description
- * @property string|null $lienInscription
- * @property Carbon $dateHeure
+ * @property string $imagePath
+ * @property string $lienInscription
+ * @property Carbon $date
  * @property int $typeActivite_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * 
+ *
  * @property TypeActivite $type_activite
  * @property Collection|GagnantsActivite[] $gagnants_activites
  *
