@@ -13,10 +13,10 @@ class CreateEleveursImagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('eleveurs_images', function (Blueprint $table) {
+        Schema::create('Utilisateurs_Images', function (Blueprint $table) {
             $table->id();
             $table->string('imagePath');
-            $table->foreignId('eleveur_id')->constrained('Eleveurs');
+            $table->foreignId('utilisateur_id')->constrained('Utilisateurs');
             $table->timestamps();
         });
     }

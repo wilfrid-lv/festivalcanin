@@ -19,6 +19,10 @@ class CreateUtilisateursTable extends Migration
             $table->string('nom');
             $table->string('email')->unique();
             $table->string('motdepasse');
+            $table->text('description');
+            $table->string('imagePath');
+            $table->string('adresse');
+            $table->string('ville');
             $table->foreignId('role_id')->constrained('Roles');
             $table->rememberToken();
             $table->timestamps();
