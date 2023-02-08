@@ -19,7 +19,7 @@
 
   <!-- Template Main CSS File -->
   <!-- <link rel="stylesheet" type="text/css" href="{{ asset('/vendor/aos/aos.css') }}"> -->
-  <link rel="stylesheet" type="text/css" href="{{ asset('/vendor/bootstrap-icons/bootstrap-icons.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('/v endor/bootstrap-icons/bootstrap-icons.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('vendor/swiper/swiper-bundle.min.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('vendor/glightbox/css/glightbox.min.css') }}">
 
@@ -58,36 +58,19 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
-          <li><a class="nav-link scrollto" href="#about">À propos</a></li>
-          <li><a class="nav-link scrollto" href="#venue">Activités</a></li>
-          <li><a class="nav-link scrollto" href="#speakers">Nos exposants</a></li>
-          <li><a class="nav-link scrollto" href="#schedule">Horaire</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Gallerie</a></li>
-          <li><a class="nav-link scrollto" href="#supporters">Partenaires</a></li>
-
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="#">Drop Down 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-              <ul>
-                <li><a href="#">Deep Drop Down 1</a></li>
-                <li><a href="#">Deep Drop Down 2</a></li>
-                <li><a href="#">Deep Drop Down 3</a></li>
-                <li><a href="#">Deep Drop Down 4</a></li>
-                <li><a href="#">Deep Drop Down 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Drop Down 2</a></li>
-            <li><a href="#">Drop Down 3</a></li>
-            <li><a href="#">Drop Down 4</a></li>
-          </ul>
-        </li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto active" href="/accueil">Accueil</a></li>
+          <li><a class="nav-link scrollto" href="/aPropos">À propos</a></li>
+          <li><a class="nav-link scrollto" href="/activites">Activités</a></li>
+          <li><a class="nav-link scrollto" href="/exposants">Nos exposants</a></li>
+          <li><a class="nav-link scrollto" href="/horaire">Horaire</a></li>
+          <li><a class="nav-link scrollto" href="/gallerie">Gallerie</a></li>
+          <li><a class="nav-link scrollto" href="/partenaire">Partenaires</a></li>
+          <li><a class="nav-link scrollto" href="/contact">Contact</a></li>
         </ul>
+
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a class="buy-tickets scrollto" href="#buy-tickets">Buy Tickets</a>
+      <a class="buy-tickets scrollto" href="#buy-tickets">Achetez votre place</a>
 
     </div>
   </header><!-- End Header -->
@@ -1032,25 +1015,14 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Accueil</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">À propos</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
             </ul>
           </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
+    
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
