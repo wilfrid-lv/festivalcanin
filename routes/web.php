@@ -65,3 +65,13 @@ Route::get('/partenaires', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+/*
+|--------------------------------------------------------------------------
+| Route pages administrations
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/admin/articles', function () {
+    return view('admin/arcticles');
+});
