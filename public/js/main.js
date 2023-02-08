@@ -97,7 +97,7 @@
   /**
    * Back to top button
    */
-  let backtotop = select('.back-to-top')
+  let backtotop = select('.back-to-top')3
   if (backtotop) {
     const toggleBacktotop = () => {
       if (window.scrollY > 100) {
@@ -146,6 +146,8 @@
       scrollto(this.hash)
     }
   }, true)
+
+
 
   /**
    * Scroll with ofset on page load with hash links in the url

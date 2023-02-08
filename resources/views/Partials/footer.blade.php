@@ -11,22 +11,24 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Lien utile</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/acceuil">Accueil</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/aPropos">À propos</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/exposants">Nos exposants</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/horaire">Horaire</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/contact">Contact</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
+            <h4>Contactez-nous</h4>
             <p>
+              515, de la Briquette ,
               A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Dégelis, QC,Quebec<br>
+              Canada <br>
+              <strong>Téléphone:</strong> (418) 750-2816<br>
+              <strong>Email:</strong> saloncanindegelis@gmail.com
+<br>
             </p>
 
             <div class="social-links">
@@ -45,7 +47,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
+        &copy; Copyright <strong>Festival Canin de Dégelis</strong>. Tout droits réservés
       </div>
       
     </div>

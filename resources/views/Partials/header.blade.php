@@ -10,7 +10,7 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-        <li><a class="nav-link scrollto active" href="/accueil">Accueil</a></li>
+        <li><a class="nav-link scrollto" href="/accueil">Accueil</a></li>
           <li><a class="nav-link scrollto" href="/aPropos">À propos</a></li>
           <li><a class="nav-link scrollto" href="/activites">Activités</a></li>
           <li><a class="nav-link scrollto" href="/exposants">Nos exposants</a></li>
@@ -22,7 +22,7 @@
 
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a class="buy-tickets scrollto" href="#buy-tickets">Achetez votre place</a>
+      <a class="buy-tickets scrollto" href="https://lepointdevente.com/" target="_blank">Achetez votre place</a>
 
     </div>
   </header><!-- End Header -->
