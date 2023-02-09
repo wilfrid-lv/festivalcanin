@@ -20,15 +20,9 @@ class CreateTypeActivitesTable extends Migration
             $table->timestamps();
         });
 
-        DB::table('TypeActivites')->insert(
+        DB::table(('TypeActivites'))->insert(
             array(
-                'nom' => 'Cours de natation'
-            )
-        );
-
-        DB::table('TypeActivites')->insert(
-            array(
-                'nom' => 'Cours de danse'
+                'nom' => 'competition'
             )
         );
 
