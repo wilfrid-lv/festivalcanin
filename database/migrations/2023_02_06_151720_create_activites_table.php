@@ -17,19 +17,21 @@ class CreateActivitesTable extends Migration
             $table->id();
             $table->string('titre');
             $table->text('description');
-            $table->string('imagePath');
-            $table->string('lienInscription');
+            //$table->string('imagePath')->nullable();
+            $table->string('lienInscription')->nullable();
             $table->dateTime('dateHeure');
             $table->foreignId('typeActivite_id')->constrained('TypeActivites');
             $table->timestamps();
         });
+
+        //todo: prendre les photos des typeactivite
 
         //ajouter une autre activite de natation a 10h35
         DB::table('Activites')->insert(
             array(
                 'titre' => 'Cours de natation',
                 'description' => 'Cours de natation pour les enfants de 3 à 12 ans',
-                'imagePath' => '/images/activites/coursnatation.jpg',
+                //'imagePath' => '/images/activites/natation.jpg',
                 'lienInscription' => 'https://www.facebook.com/lionsdegelis/',
                 'dateHeure' => '2021-09-26 10:35:00',
                 'typeActivite_id' => 1
@@ -40,7 +42,7 @@ class CreateActivitesTable extends Migration
             array(
                 'titre' => 'Cours de natation',
                 'description' => 'Cours de natation pour les enfants de 3 à 12 ans',
-                'imagePath' => '/images/activites/coursnatation.jpg',
+                //'imagePath' => '/images/activites/coursnatation.jpg',
                 'lienInscription' => 'https://www.facebook.com/lionsdegelis/',
                 'dateHeure' => '2021-09-26 15:00:00',
                 'typeActivite_id' => 1
@@ -51,8 +53,8 @@ class CreateActivitesTable extends Migration
             array(
                 'titre' => 'Cours de danse',
                 'description' => 'Cours de danse pour les enfants de 3 à 12 ans',
-                'imagePath' => '/images/activites/coursdanse.jpg',
-                'lienInscription' => 'https://www.facebook.com/lionsdegelis/',
+                //'imagePath' => '/images/activites/coursdanse.jpg',
+                //'lienInscription' => 'https://www.facebook.com/lionsdegelis/',
                 'dateHeure' => '2021-09-26 13:40:00',
                 'typeActivite_id' => 2
             )

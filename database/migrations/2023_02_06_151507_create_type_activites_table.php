@@ -16,18 +16,21 @@ class CreateTypeActivitesTable extends Migration
         Schema::create('TypeActivites', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
+            $table->string('imagePath')->nullable();
             $table->timestamps();
         });
 
         DB::table('TypeActivites')->insert(
             array(
-                'nom' => 'Cours de natation'
+                'nom' => 'Cours de natation',
+                'imagePath' => '/images/activites/natation.jpg'
             )
         );
 
         DB::table('TypeActivites')->insert(
             array(
-                'nom' => 'Cours de danse'
+                'nom' => 'Cours de danse',
+                'imagePath' => '/images/activites/danse.jpg'
             )
         );
     }

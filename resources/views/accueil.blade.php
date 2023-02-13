@@ -226,14 +226,23 @@
 
               @foreach($activites as $activite)
                   <div class="row schedule-item">
-                      <div class="col-md-2"><time>{{\Carbon\Carbon::parse($activite->dateHeure)->format('H:i')}}</time></div>
+                      <div class="col-md-1"><time>{{\Carbon\Carbon::parse($activite->dateHeure)->format('H:i')}}</time></div>
                       <div class="col-md-10">
-                          <!--
-                          <div class="speaker">
-                              <img src="assets/img/speakers/1.jpg" alt="Brenden Legros">
-                          </div>-->
+                          @if(!is_null($activite->type_activite->imagePath))
+                              <div class="speaker">
+                                  <img src="{{asset($activite->type_activite->imagePath)}}">
+                              </div>
+                          @else
+                              <div class="speaker">
+                                  <img src="" alt="">
+                              </div>
+
+                          @endif
                           <h4><span>{{$activite->titre}}</span></h4>
                           <p>{{$activite->description}}</p>
+                          @if(!is_null($activite->lienInscription))
+                              <a href="{{$activite->lienInscription}}" target="_blank" class="link">Inscription</a>
+                          @endif
                       </div>
                   </div>
 
@@ -714,7 +723,7 @@
 
   @include('partials.footer')
 
-  
+
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
