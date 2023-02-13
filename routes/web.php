@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InformationsController;
 
@@ -23,8 +24,6 @@ use App\Http\Controllers\InformationsController;
 Route::get('/welcome', function () {
     return view('welcome');
 });
-
-
 
 /*
 |--------------------------------------------------------------------------
@@ -79,7 +78,17 @@ Route::get('/contact', function () {
 Route::get('/admin/articles', function () {
     return view('admin/arcticles');
 });
-Route::get
-Auth::routes();
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+/*
+|--------------------------------------------------------------------------
+| Route Login | Register | Verify
+|--------------------------------------------------------------------------
+*/
+
+Auth::routes();
+
