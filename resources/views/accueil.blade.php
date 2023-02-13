@@ -43,13 +43,13 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto" href="/accueil">Accueil</a></li>
+          <li><a class="nav-link scrollto" href="/">Accueil</a></li>
           <li><a class="nav-link scrollto" href="/aPropos">À propos</a></li>
           <li><a class="nav-link scrollto" href="/activites">Activités</a></li>
           <li><a class="nav-link scrollto" href="/exposants">Nos exposants</a></li>
           <li><a class="nav-link scrollto" href="/horaire">Horaire</a></li>
           <li><a class="nav-link scrollto" href="/gallerie">Gallerie</a></li>
-          <li><a class="nav-link scrollto" href="/partenaire">Partenaires</a></li>
+          <li><a class="nav-link scrollto" href="/partenaires">Partenaires</a></li>
           <li><a class="nav-link scrollto" href="/contact">Contact</a></li>
         </ul>
 
@@ -92,11 +92,12 @@
     </section><!-- End About Section -->
 
     <!-- ======= Speakers Section ======= -->
+
     <section id="speakers">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Nos exposants</h2>
-
+          <p>Voici les exposants qui seront présent lors de notre festival</p>
         </div>
 
         <div class="row">
@@ -105,7 +106,7 @@
               <img src="assets/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
               <div class="details">
                 <h3><a href="speaker-details.html">Brenden Legros</a></h3>
-                <p>Quas alias incidunt</p>
+                <p></p>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
@@ -713,7 +714,7 @@
 
   @include('partials.footer')
 
-
+  
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->

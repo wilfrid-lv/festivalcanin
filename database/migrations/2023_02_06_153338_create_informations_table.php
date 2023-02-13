@@ -35,7 +35,7 @@ class CreateInformationsTable extends Migration
                 'dateDebut' => '2023-08-26',
                 'dateFin' => '2023-08-27',
                 'description' => 'Le Festival Canin est un festival comportant plusieurs chiens',
-                'descriptionLocalisation' => 'L\'évènement se situe autour du Centre Communautaire de Dégelis, lien enchanteur situé au bord du fleuve St-Laurent. ',
+                'descriptionLocalisation' => 'L\'évènement se situe autour du Centre Communautaire de Dégelis, lieu enchanteur situé au bord du fleuve St-Laurent. ',
                 'noTelephoneContact' => '418-750-2816',
                 'courrielContact' => 'courrielcontact@gmail.com',
                 'lieu' => 'Centre Communautaire de Dégelis',
