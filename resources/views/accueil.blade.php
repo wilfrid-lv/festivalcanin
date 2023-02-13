@@ -18,20 +18,13 @@
 
 
   <!-- Template Main CSS File -->
-  <!-- <link rel="stylesheet" type="text/css" href="{{ asset('template/assets/vendor/aos/aos.css') }}"> -->
-    <!-- Template Main CSS File -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('template/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('template/assetsvendor/swiper/swiper-bundle.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('template/assetsvendor/glightbox/css/glightbox.min.css') }}">
   <!-- <link rel="stylesheet" type="text/css" href="{{ asset('/vendor/aos/aos.css') }}"> -->
   <link rel="stylesheet" type="text/css" href="{{ asset('/vendor/bootstrap-icons/bootstrap-icons.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('vendor/swiper/swiper-bundle.min.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('vendor/glightbox/css/glightbox.min.css') }}">
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('template/assets/css/style.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('template/assets/vendor/bootstrap/css/bootstrap.min.css') }}">
-    <link rel="" href="{{ asset('template/assets/js/main.js') }}" /><!--Recommended-->
-
+  <link rel="stylesheet" type="text/css" href="{{ asset('/css/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('/vendor/bootstrap/css/bootstrap.min.css') }}">
 
 </head>
 
@@ -381,7 +374,6 @@
           @endforeach
 
         </div>
-
       </div>
 
     </section><!-- End Sponsors Section -->
