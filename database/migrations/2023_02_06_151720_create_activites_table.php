@@ -52,7 +52,6 @@ class CreateActivitesTable extends Migration
                 'typeActivite_id' => 2
             )
         );
-
     }
 
     /**
