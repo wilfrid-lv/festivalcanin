@@ -24,41 +24,31 @@ class CreateActivitesTable extends Migration
             $table->timestamps();
         });
 
-        //todo: prendre les photos des typeactivite
 
-        //ajouter une autre activite de natation a 10h35
+        //ajouter activite sport canin a 9h
         DB::table('Activites')->insert(
             array(
-                'titre' => 'Cours de natation',
-                'description' => 'Cours de natation pour les enfants de 3 à 12 ans',
-                //'imagePath' => '/images/activites/natation.jpg',
+                'titre' => 'Rattrapage de moutons',
+                'description' => 'Les chiens entrent en compétition pour savoir qui sera capable de ramener les moutons en un court laps de temps',
+                //'imagePath' => '/images/activites/sportcanin.png',
                 'lienInscription' => 'https://www.facebook.com/lionsdegelis/',
-                'dateHeure' => '2021-09-26 10:35:00',
+                'dateHeure' => '2021-02-06 09:00:00',
                 'typeActivite_id' => 1
             )
         );
 
+        //ajouter conference sur les chiens de chasse a 10h
         DB::table('Activites')->insert(
             array(
-                'titre' => 'Cours de natation',
-                'description' => 'Cours de natation pour les enfants de 3 à 12 ans',
-                //'imagePath' => '/images/activites/coursnatation.jpg',
-                'lienInscription' => 'https://www.facebook.com/lionsdegelis/',
-                'dateHeure' => '2021-09-26 15:00:00',
-                'typeActivite_id' => 1
-            )
-        );
-
-        DB::table('Activites')->insert(
-            array(
-                'titre' => 'Cours de danse',
-                'description' => 'Cours de danse pour les enfants de 3 à 12 ans',
-                //'imagePath' => '/images/activites/coursdanse.jpg',
+                'titre' => 'Chiens de chasse',
+                'description' => 'Paul Piché raconte l\'importance historique des chiens de chasse',
+                //'imagePath' => '/images/activites/conference.png',
                 //'lienInscription' => 'https://www.facebook.com/lionsdegelis/',
-                'dateHeure' => '2021-09-26 13:40:00',
+                'dateHeure' => '2021-02-06 10:00:00',
                 'typeActivite_id' => 2
             )
         );
+
     }
 
     /**

@@ -20,17 +20,19 @@ class CreateTypeActivitesTable extends Migration
             $table->timestamps();
         });
 
+        //ajouter type sport canin
         DB::table('TypeActivites')->insert(
             array(
-                'nom' => 'Cours de natation',
-                'imagePath' => '/images/activites/natation.jpg'
+                'nom' => 'Compétition',
+                'imagePath' => '/images/activites/competition.jpg'
             )
         );
 
+        //ajouter type conference
         DB::table('TypeActivites')->insert(
             array(
-                'nom' => 'Cours de danse',
-                'imagePath' => '/images/activites/danse.jpg'
+                'nom' => 'Conférence',
+                'imagePath' => '/images/activites/conference.png'
             )
         );
     }
