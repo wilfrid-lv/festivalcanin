@@ -18,6 +18,18 @@ class CreateTypeActivitesTable extends Migration
             $table->string('nom');
             $table->timestamps();
         });
+
+        DB::table('TypeActivites')->insert(
+            array(
+                'nom' => 'Cours de natation'
+            )
+        );
+
+        DB::table('TypeActivites')->insert(
+            array(
+                'nom' => 'Cours de danse'
+            )
+        );
     }
 
     /**
