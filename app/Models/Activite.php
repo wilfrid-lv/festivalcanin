@@ -18,7 +18,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $description
  * @property string $imagePath
  * @property string $lienInscription
- * @property Carbon $date
+ * @property Carbon $dateHeure
  * @property int $typeActivite_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at

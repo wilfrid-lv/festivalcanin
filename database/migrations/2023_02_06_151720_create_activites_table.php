@@ -19,6 +19,7 @@ class CreateActivitesTable extends Migration
             $table->text('description');
             $table->string('imagePath');
             $table->string('lienInscription');
+            $table->dateTime('dateHeure');
             $table->date('date');
             //$table->string('imagePath')->nullable();
             $table->string('lienInscription')->nullable();
