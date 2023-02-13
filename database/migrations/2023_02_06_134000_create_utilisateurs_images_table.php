@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateEleveursImagesTable extends Migration
+class CreateUtilisateursImagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateEleveursImagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('Utilisateurs_Images', function (Blueprint $table) {
+        Schema::create('UtilisateursImages', function (Blueprint $table) {
             $table->id();
             $table->string('imagePath');
             $table->foreignId('utilisateur_id')->constrained('Utilisateurs');
@@ -28,6 +28,6 @@ class CreateEleveursImagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('eleveurs_images');
+        Schema::dropIfExists('UtilisateursImages');
     }
 }

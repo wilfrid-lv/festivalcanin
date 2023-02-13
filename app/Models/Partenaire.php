@@ -14,7 +14,7 @@ use Illuminate\Database\Eloquent\Model;
  * 
  * @property int $id
  * @property string $nom
- * @property string $pathImage
+ * @property string $imagePath
  * @property string $lien
  * @property string $niveau
  * @property Carbon|null $created_at
@@ -28,7 +28,7 @@ class Partenaire extends Model
 
 	protected $fillable = [
 		'nom',
-		'pathImage',
+		'imagePath',
 		'lien',
 		'niveau'
 	];

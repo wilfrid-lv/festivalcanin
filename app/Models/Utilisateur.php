@@ -14,17 +14,21 @@ use Illuminate\Database\Eloquent\Model;
  * Class Utilisateur
  * 
  * @property int $id
- * @property string $nom
  * @property string $email
  * @property string $motdepasse
+ * @property string|null $nom
+ * @property string|null $description
+ * @property string|null $imagePath
+ * @property string|null $adresse
+ * @property string|null $ville
  * @property int $role_id
  * @property string|null $remember_token
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * 
  * @property Role $role
- * @property Collection|Eleveur[] $eleveurs
- * @property Collection|Exposant[] $exposants
+ * @property Collection|Article[] $articles
+ * @property Collection|UtilisateursImage[] $utilisateurs_images
  *
  * @package App\Models
  */
@@ -41,9 +45,13 @@ class Utilisateur extends Model
 	];
 
 	protected $fillable = [
-		'nom',
 		'email',
 		'motdepasse',
+		'nom',
+		'description',
+		'imagePath',
+		'adresse',
+		'ville',
 		'role_id',
 		'remember_token'
 	];
@@ -53,13 +61,13 @@ class Utilisateur extends Model
 		return $this->belongsTo(Role::class, 'role_id');
 	}
 
-	public function eleveurs()
+	public function articles()
 	{
-		return $this->hasMany(Eleveur::class, 'utilisateur_id');
+		return $this->hasMany(Article::class, 'utilisateur_id');
 	}
 
-	public function exposants()
+	public function utilisateurs_images()
 	{
-		return $this->hasMany(Exposant::class, 'utilisateur_id');
+		return $this->hasMany(UtilisateursImage::class, 'utilisateur_id');
 	}
 }

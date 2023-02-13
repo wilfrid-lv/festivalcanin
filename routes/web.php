@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\InformationsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,8 +32,10 @@ Route::get('/welcome', function () {
 |--------------------------------------------------------------------------
 */
 
-Route::get('/', function () {
-    return view('accueil');
+Route::get('/', [InformationsController::class, 'accueil']);
+
+Route::get('/footer', function () {
+    return view('partials.footer');
 });
 
 Route::get('/aPropos', function () {
@@ -65,6 +68,7 @@ Route::get('/partenaires', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
 
 /*
 |--------------------------------------------------------------------------

@@ -17,12 +17,23 @@ class CreateActivitesTable extends Migration
             $table->id();
             $table->string('titre');
             $table->text('description');
-            $table->string('image');
+            $table->string('imagePath');
             $table->string('lienInscription');
-            $table->date('date');
+            $table->datetime('dateHeure');
             $table->foreignId('typeActivite_id')->constrained('TypeActivites');
             $table->timestamps();
         });
+
+        DB::table(('Activites'))->insert(
+            array(
+                'titre' => 'Une activite agreable',
+                'description' => 'Ceci est une activité agréable',
+                'imagePath' => 'chepo',
+                'lienInscription' => 'https://news.pistacherigolo.com',
+                'dateHeure' => '2022-02-20 18:45:23',
+                'typeActivite_id' => '1'
+            )
+        );
     }
 
     /**

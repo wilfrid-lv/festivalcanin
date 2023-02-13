@@ -22,12 +22,9 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contactez-nous</h4>
             <p>
-              515, de la Briquette ,
-              A108 Adam Street <br>
-              Dégelis, QC,Quebec<br>
-              Canada <br>
-              <strong>Téléphone:</strong> (418) 750-2816<br>
-              <strong>Email:</strong> saloncanindegelis@gmail.com
+                {{$information->adresse}}<br>
+              <strong>Téléphone:</strong> {{$information->noTelephoneContact}}<br>
+              <strong>Email:</strong> {{$information->courrielContact}}<br>
 <br>
             </p>
 
@@ -49,6 +46,6 @@
       <div class="copyright">
         &copy; Copyright <strong>Festival Canin de Dégelis</strong>. Tout droits réservés
       </div>
-      
+
     </div>
   </footer><!-- End  Footer -->

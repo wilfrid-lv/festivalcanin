@@ -139,7 +139,8 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
-	Reliese\Coders\CodersServiceProvider::class,
+        App\Providers\FooterServiceProvider::class,
+        Reliese\Coders\CodersServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,

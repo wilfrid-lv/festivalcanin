@@ -17,14 +17,13 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $titre
  * @property string $contenu
  * @property bool $approuve
- * @property int $eleveur_id
+ * @property int $utilisateur_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * 
- * @property Eleveur $eleveur
+ * @property Utilisateur $utilisateur
  * @property Collection|Commentaire[] $commentaires
  * @property Collection|ImagesArticle[] $images_articles
- * @property Collection|MotsCle[] $mots_cles
  *
  * @package App\Models
  */
@@ -34,19 +33,19 @@ class Article extends Model
 
 	protected $casts = [
 		'approuve' => 'bool',
-		'eleveur_id' => 'int'
+		'utilisateur_id' => 'int'
 	];
 
 	protected $fillable = [
 		'titre',
 		'contenu',
 		'approuve',
-		'eleveur_id'
+		'utilisateur_id'
 	];
 
-	public function eleveur()
+	public function utilisateur()
 	{
-		return $this->belongsTo(Eleveur::class, 'eleveur_id');
+		return $this->belongsTo(Utilisateur::class, 'utilisateur_id');
 	}
 
 	public function commentaires()
@@ -57,12 +56,5 @@ class Article extends Model
 	public function images_articles()
 	{
 		return $this->hasMany(ImagesArticle::class, 'article_id');
-	}
-
-	public function mots_cles()
-	{
-		return $this->belongsToMany(MotsCle::class, 'MotsClesArticles', 'article_id', 'motcle_id')
-					->withPivot('id')
-					->withTimestamps();
 	}
 }

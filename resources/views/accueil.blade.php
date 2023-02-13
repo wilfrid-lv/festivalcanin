@@ -19,7 +19,7 @@
 
   <!-- Template Main CSS File -->
   <!-- <link rel="stylesheet" type="text/css" href="{{ asset('/vendor/aos/aos.css') }}"> -->
-  <link rel="stylesheet" type="text/css" href="{{ asset('/v endor/bootstrap-icons/bootstrap-icons.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('/vendor/bootstrap-icons/bootstrap-icons.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('vendor/swiper/swiper-bundle.min.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ asset('vendor/glightbox/css/glightbox.min.css') }}">
 
@@ -77,13 +77,11 @@
         <div class="row">
           <div class="col-lg-6">
             <h2>À propos du Festival Canin</h2>
-            <p>Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error amet eius aut
-              accusantium et. Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore in
-              est ut optio sequi unde.</p>
+            <p>{{$information->resume}}</p>
           </div>
           <div class="col-lg-3">
             <h3>Où ?</h3>
-            <p>Downtown Conference Center, New York</p>
+            <p>{{$information->adresse}}</p>
           </div>
           <div class="col-lg-3">
             <h3>Quand</h3>
@@ -295,7 +293,7 @@
                 <div class="speaker">
                   <img src="assets/img/speakers/6.jpg" alt="Willow Trantow">
                 </div>
-                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
+                <h4>Quo quiaffichage frontend dynamiques, modification BD praesentium nesciunt <span>Willow Trantow</span></h4>
                 <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
               </div>
             </div>
@@ -459,20 +457,21 @@
       <div class="container-fluid" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Event Venue</h2>
-          <p>Event venue location info and gallery</p>
+          <h2>Où se situe l'évènement?</h2>
+          <!--<p>Event venue location info and gallery</p>-->
         </div>
 
         <div class="row g-0">
           <div class="col-lg-6 venue-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10771.52610780684!2d-68.6470274!3d47.5506345!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cbdc779117a5157%3A0xb0f9ea01b69a2839!2sD%C3%A9gelis%20Centre%20Communautaire!5e0!3m2!1sfr!2sca!4v1675887111978!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
           <div class="col-lg-6 venue-info">
             <div class="row justify-content-center">
               <div class="col-11 col-lg-8 position-relative">
-                <h3>Downtown Conference Center, New York</h3>
-                <p>Iste nobis eum sapiente sunt enim dolores labore accusantium autem. Cumque beatae ipsam. Est quae sit qui voluptatem corporis velit. Qui maxime accusamus possimus. Consequatur sequi et ea suscipit enim nesciunt quia velit.</p>
+                <h3>{{$information->lieu}}</h3>
+                <p>{{$information->descriptionLocalisation}}
+                </p>
               </div>
             </div>
           </div>
@@ -651,7 +650,19 @@
         <div class="section-header">
           <h2>Sponsors</h2>
         </div>
+          <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+          @foreach($partenaires as $partenaire)
+              <div class="col-lg-3 col-md-4 col-xs-6">
+                  <a target="_blank" href="{{$partenaire->lien}}">
+                      <div class="supporter-logo">
+                          <img src="{{asset($partenaire->imagePath)}}" class="img-fluid" alt="">
+                      </div>
+                  </a>
+              </div>
 
+          @endforeach
+
+          <!--
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
 
           <div class="col-lg-3 col-md-4 col-xs-6">
@@ -672,35 +683,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="assets/img/supporters/4.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="assets/img/supporters/5.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="assets/img/supporters/6.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="assets/img/supporters/7.png" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="assets/img/supporters/8.png" class="img-fluid" alt="">
-            </div>
-          </div>
+-->
 
         </div>
 
