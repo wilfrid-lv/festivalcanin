@@ -11,5 +11,5 @@ class InformationsController extends Controller
         $information = Information::first();
         return view('accueil', ['information' => $information]);
     }
-    //
+
 }

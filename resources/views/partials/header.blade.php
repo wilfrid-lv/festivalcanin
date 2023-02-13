@@ -16,7 +16,7 @@
           <li><a class="nav-link scrollto" href="/exposants">Nos exposants</a></li>
           <li><a class="nav-link scrollto" href="/horaire">Horaire</a></li>
           <li><a class="nav-link scrollto" href="/gallerie">Gallerie</a></li>
-          <li><a class="nav-link scrollto" href="/partenaire">Partenaires</a></li>
+          <li><a class="nav-link scrollto" href="/partenaires">Partenaires</a></li>
           <li><a class="nav-link scrollto" href="/contact">Contact</a></li>
         </ul>
 
