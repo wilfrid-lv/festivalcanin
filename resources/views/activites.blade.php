@@ -7,4 +7,11 @@
 
 @endsection
 
+
+
+
+
+
 <!-- @include('partials.footer') -->
+
+

@@ -13,5 +13,5 @@ class InformationsController extends Controller
         $partenaires = Partenaire::all();
         return view('accueil', ['information' => $information, 'partenaires' => $partenaires]);
     }
-    //
+
 }
