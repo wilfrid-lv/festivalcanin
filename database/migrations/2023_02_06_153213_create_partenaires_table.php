@@ -89,6 +89,15 @@ class CreatePartenairesTable extends Migration
             )
         );
 
+        //Griffés Distingués
+        DB::table('Partenaires')->insert(
+            array(
+                'nom' => 'Griffés Distingués',
+                'imagePath' => '/images/partenaires/griffesdistingues.png',
+                'lien' => 'https://www.griffesdistingues.com/',
+                'niveau_id' => 3
+            )
+        );
 
     }
 

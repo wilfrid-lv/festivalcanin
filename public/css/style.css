@@ -1670,3 +1670,8 @@ h6 {
   font-size: 13px;
   color: #ddd;
 }
+
+.img-fluid{
+    max-width: 100%;
+    max-height: 120%;
+}

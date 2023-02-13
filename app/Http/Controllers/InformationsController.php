@@ -7,6 +7,8 @@ use App\Models\Information;
 use App\Models\Partenaire;
 use App\Models\Niveau;
 use App\Models\Activite;
+use App\Models\QuestionsReponse;
+use Illuminate\Support\Facades\Storage;
 
 class InformationsController extends Controller
 {
@@ -15,7 +17,13 @@ class InformationsController extends Controller
         $niveaux = Niveau::all();
         //order by dateHeure
         $activites = Activite::orderBy('dateHeure', 'asc')->get();
-        return view('accueil', ['information' => $information, 'niveaux' => $niveaux, 'activites' => $activites]);
+        $questionsReponses = QuestionsReponse::all();
+        $fichiers = Storage::disk('public')->files('gallerie');
+        return view('accueil', ['information' => $information,
+                                     'niveaux' => $niveaux,
+                                     'activites' => $activites,
+                                     'fichiers' => $fichiers,
+                                     'questionsReponses' => $questionsReponses]);
     }
     //
 }

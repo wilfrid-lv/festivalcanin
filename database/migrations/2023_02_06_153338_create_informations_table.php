@@ -39,7 +39,7 @@ class CreateInformationsTable extends Migration
                 'noTelephoneContact' => '418-750-2816',
                 'courrielContact' => 'courrielcontact@gmail.com',
                 'lieu' => 'Centre Communautaire de Dégelis',
-                'resume' => 'voici un court résumé comportant plusieurs chiens',
+                'resume' => 'voici un court résumé comportant plusieurs chiens, tel les border coley et les chiens de type normal',
                 'adresse' => '515, de la Briquette, Dégelis, QC, Canada',
                 'imageAccueil' => 'imageAccueil',
                 'lienVideo' => 'lienVideo'
