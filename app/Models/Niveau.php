@@ -11,29 +11,27 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class TypeActivite
+ * Class Niveau
  * 
  * @property int $id
  * @property string $nom
- * @property string|null $imagePath
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * 
- * @property Collection|Activite[] $activites
+ * @property Collection|Partenaire[] $partenaires
  *
  * @package App\Models
  */
-class TypeActivite extends Model
+class Niveau extends Model
 {
-	protected $table = 'TypeActivites';
+	protected $table = 'Niveaux';
 
 	protected $fillable = [
-		'nom',
-		'imagePath'
+		'nom'
 	];
 
-	public function activites()
+	public function partenaires()
 	{
-		return $this->hasMany(Activite::class, 'typeActivite_id');
+		return $this->hasMany(Partenaire::class, 'niveau_id');
 	}
 }

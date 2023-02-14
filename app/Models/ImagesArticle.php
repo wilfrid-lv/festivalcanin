@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Model;
  * Class ImagesArticle
  * 
  * @property int $id
- * @property string $path
+ * @property string $imagePath
  * @property int $article_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
@@ -31,7 +31,7 @@ class ImagesArticle extends Model
 	];
 
 	protected $fillable = [
-		'path',
+		'imagePath',
 		'article_id'
 	];
 

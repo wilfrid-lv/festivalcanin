@@ -17,23 +17,38 @@ class CreateActivitesTable extends Migration
             $table->id();
             $table->string('titre');
             $table->text('description');
-            $table->string('imagePath');
-            $table->string('lienInscription');
-            $table->datetime('dateHeure');
+            //$table->string('imagePath')->nullable();
+            $table->string('lienInscription')->nullable();
+            $table->dateTime('dateHeure');
             $table->foreignId('typeActivite_id')->constrained('TypeActivites');
             $table->timestamps();
         });
 
-        DB::table(('Activites'))->insert(
+
+        //ajouter activite sport canin a 9h
+        DB::table('Activites')->insert(
             array(
-                'titre' => 'Une activite agreable',
-                'description' => 'Ceci est une activité agréable',
-                'imagePath' => 'chepo',
-                'lienInscription' => 'https://news.pistacherigolo.com',
-                'dateHeure' => '2022-02-20 18:45:23',
-                'typeActivite_id' => '1'
+                'titre' => 'Rattrapage de moutons',
+                'description' => 'Les chiens entrent en compétition pour savoir qui sera capable de ramener les moutons en un court laps de temps',
+                //'imagePath' => '/images/activites/sportcanin.png',
+                'lienInscription' => 'https://www.facebook.com/lionsdegelis/',
+                'dateHeure' => '2021-02-06 09:00:00',
+                'typeActivite_id' => 1
             )
         );
+
+        //ajouter conference sur les chiens de chasse a 10h
+        DB::table('Activites')->insert(
+            array(
+                'titre' => 'Chiens de chasse',
+                'description' => 'Paul Piché raconte l\'importance historique des chiens de chasse',
+                //'imagePath' => '/images/activites/conference.png',
+                //'lienInscription' => 'https://www.facebook.com/lionsdegelis/',
+                'dateHeure' => '2021-02-06 10:00:00',
+                'typeActivite_id' => 2
+            )
+        );
+
     }
 
     /**

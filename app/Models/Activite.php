@@ -16,9 +16,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $id
  * @property string $titre
  * @property string $description
- * @property string $imagePath
- * @property string $lienInscription
- * @property Carbon $date
+ * @property string|null $lienInscription
+ * @property Carbon $dateHeure
  * @property int $typeActivite_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
@@ -37,15 +36,14 @@ class Activite extends Model
 	];
 
 	protected $dates = [
-		'date'
+		'dateHeure'
 	];
 
 	protected $fillable = [
 		'titre',
 		'description',
-		'imagePath',
 		'lienInscription',
-		'date',
+		'dateHeure',
 		'typeActivite_id'
 	];
 
