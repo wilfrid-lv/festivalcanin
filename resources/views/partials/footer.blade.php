@@ -5,11 +5,11 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <img src="assets/img/logo.png" alt="TheEvenet">
-            <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
+            <img src="assets/img/logo.png" alt="Festival Canin de Dégelis">
+              <p>{{$information->description}}</p>
           </div>
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Lien utile</h4>
+            <h4>Liens</h4>
             <ul>
               <li><i class="bi bi-chevron-right"></i> <a href="/acceuil">Accueil</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="/aPropos">À propos</a></li>
@@ -22,13 +22,9 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contactez-nous</h4>
             <p>
-              515, de la Briquette ,
-              A108 Adam Street <br>
-              Dégelis, QC,Quebec<br>
-              Canada <br>
-              <strong>Téléphone:</strong> (418) 750-2816<br>
-              <strong>Email:</strong> saloncanindegelis@gmail.com
-<br>
+              <strong>Adresse:</strong> {{$information->adresse}}<br>
+              <strong>Téléphone:</strong> {{$information->noTelephoneContact}}<br>
+              <strong>Email:</strong> {{$information->courrielContact}}<br>
             </p>
 
             <div class="social-links">
