@@ -57,8 +57,8 @@ Route::get('/horaire', function () {
     return view('horaire');
 });
 
-Route::get('/gallerie', function () {
-    return view('gallerie');
+Route::get('/galerie', function () {
+    return view('galerie');
 });
 
 Route::get('/partenaires', function () {
