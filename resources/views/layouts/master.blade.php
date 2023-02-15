@@ -9,7 +9,7 @@
     <link href="template/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRaleway:300,400,500,700,800" rel="stylesheet">
 
 
     <!-- Template Main CSS File -->
@@ -41,14 +41,25 @@
 <script src="{{asset('template/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
 <script src="{{asset('template/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
 <script src="{{asset('template/assets/vendor/php-email-form/validate.js')}}"></script>
+<<<<<<< HEAD
+=======
 
+>>>>>>> 291d19442c8db1bfc05dfc021d947cbeb8e69af1
 
 <!---------------------------- Template Main JS File--------------------------->
 
+<<<<<<< HEAD
+<!---------------------------- Template Main JS File--------------------------->
+
+=======
+>>>>>>> 291d19442c8db1bfc05dfc021d947cbeb8e69af1
 <script src="{{asset('template/assets/js/main.js')}}"></script>
 
 </body>
 
 </html>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 291d19442c8db1bfc05dfc021d947cbeb8e69af1
