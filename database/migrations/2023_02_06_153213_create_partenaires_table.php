@@ -80,25 +80,6 @@ class CreatePartenairesTable extends Migration
             )
         );
 
-        DB::table('Partenaires')->insert(
-            array(
-                'nom' => 'Couleur de Blé',
-                'imagePath' => '/images/partenaires/couleurdeble.png',
-                'lien' => 'https://www.couleurdeble.com/',
-                'niveau_id' => 3
-            )
-        );
-
-        //Griffés Distingués
-        DB::table('Partenaires')->insert(
-            array(
-                'nom' => 'Griffés Distingués',
-                'imagePath' => '/images/partenaires/griffesdistingues.png',
-                'lien' => 'https://www.griffesdistingues.com/',
-                'niveau_id' => 3
-            )
-        );
-
     }
 
     /**

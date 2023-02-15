@@ -31,11 +31,6 @@ class CreateNiveauxTable extends Migration
             )
         );
 
-        DB::table('Niveaux')->insert(
-            array(
-                'nom' => 'Bronze'
-            )
-        );
     }
 
     /**
