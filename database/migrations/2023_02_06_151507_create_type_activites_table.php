@@ -35,6 +35,8 @@ class CreateTypeActivitesTable extends Migration
                 'imagePath' => '/images/activites/conference.png'
             )
         );
+
+
     }
 
     /**
