@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Activite
- *
+ * 
  * @property int $id
  * @property string $titre
  * @property string $description
@@ -21,7 +21,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $typeActivite_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- *
+ * 
  * @property TypeActivite $type_activite
  * @property Collection|GagnantsActivite[] $gagnants_activites
  *

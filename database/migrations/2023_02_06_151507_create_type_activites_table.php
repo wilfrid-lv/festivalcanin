@@ -35,22 +35,6 @@ class CreateTypeActivitesTable extends Migration
                 'imagePath' => '/images/activites/conference.png'
             )
         );
-
-        //ajouter type sport canin
-        DB::table('TypeActivites')->insert(
-            array(
-                'nom' => 'Compétition',
-                'imagePath' => '/images/activites/competition.jpg'
-            )
-        );
-
-        //ajouter type conference
-        DB::table('TypeActivites')->insert(
-            array(
-                'nom' => 'Conférence',
-                'imagePath' => '/images/activites/conference.png'
-            )
-        );
     }
 
     /**

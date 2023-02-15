@@ -18,13 +18,13 @@
 
 
   <!-- Template Main CSS File -->
-  <!-- <link rel="stylesheet" type="text/css" href="{{ asset('/vendor/aos/aos.css') }}"> -->
-  <link rel="stylesheet" type="text/css" href="{{ asset('/vendor/bootstrap-icons/bootstrap-icons.css') }}">
-  <link rel="stylesheet" type="text/css" href="{{ asset('vendor/swiper/swiper-bundle.min.css') }}">
-  <link rel="stylesheet" type="text/css" href="{{ asset('vendor/glightbox/css/glightbox.min.css') }}">
+  <!-- <link rel="stylesheet" type="text/css" href="{{ asset('template/assets//vendor/aos/aos.css') }}"> -->
+  <link rel="stylesheet" type="text/css" href="{{ asset('template/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('template/assets/vendor/swiper/swiper-bundle.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('template/assets/vendor/glightbox/css/glightbox.min.css') }}">
 
-  <link rel="stylesheet" type="text/css" href="{{ asset('/css/style.css') }}">
-  <link rel="stylesheet" type="text/css" href="{{ asset('/vendor/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('template/assets//css/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('template/assets//vendor/bootstrap/css/bootstrap.min.css') }}">
 
 </head>
 
@@ -422,13 +422,15 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <script src="{{asset('template/assets/vendor/aos/aos.js') }}"></script>
-  <script src="{{asset('template/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{asset('template/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
-  <script src="{{asset('template/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
-  <script src="{{asset('template/assets/vendor/php-email-form/validate.js')}}"></script>
+  <!-- Vendor JS Files -->
+  <script src="template/assets/vendor/aos/aos.js"></script>
+  <script src="template/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="template/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="template/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="template/assets/vendor/php-email-form/validate.js"></script>
+
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="template/assets/js/main.js"></script>
 
 </body>
 

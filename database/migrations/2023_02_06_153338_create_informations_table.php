@@ -35,9 +35,11 @@ class CreateInformationsTable extends Migration
                 'dateDebut' => '2023-08-26',
                 'dateFin' => '2023-08-27',
                 'description' => 'Le Festival Canin est un festival comportant plusieurs chiens',
+                'descriptionLocalisation' => 'L\'évènement se situe autour du Centre Communautaire de Dégelis, lieu enchanteur situé au bord du fleuve St-Laurent. ',
                 'noTelephoneContact' => '418-750-2816',
                 'courrielContact' => 'courrielcontact@gmail.com',
-                'resume' => 'voici un court résumé comportant plusieurs chiens',
+                'lieu' => 'Centre Communautaire de Dégelis',
+                'resume' => 'voici un court résumé comportant plusieurs chiens, tel les border coley et les chiens de type normal',
                 'adresse' => '515, de la Briquette, Dégelis, QC, Canada',
                 'imageAccueil' => 'imageAccueil',
                 'lienVideo' => 'lienVideo'

@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Information
- *
+ * 
  * @property int $id
  * @property Carbon $dateDebut
  * @property Carbon $dateFin
@@ -42,7 +42,9 @@ class Information extends Model
 		'dateDebut',
 		'dateFin',
 		'description',
+		'descriptionLocalisation',
 		'noTelephoneContact',
+		'lieu',
 		'courrielContact',
 		'resume',
 		'adresse',
