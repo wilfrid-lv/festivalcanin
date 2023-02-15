@@ -426,11 +426,9 @@
 
   <!-- Vendor JS Files -->
   <script src="template/assets/vendor/aos/aos.js"></script>
-<<<<<<< HEAD
   <script src="template/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-=======
+
   <script src="template/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
->>>>>>> 291d19442c8db1bfc05dfc021d947cbeb8e69af1
   <script src="template/assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="template/assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="template/assets/vendor/php-email-form/validate.js"></script>
