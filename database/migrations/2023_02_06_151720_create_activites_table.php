@@ -42,10 +42,31 @@ class CreateActivitesTable extends Migration
             array(
                 'titre' => 'Chiens de chasse',
                 'description' => 'Paul Piché raconte l\'importance historique des chiens de chasse',
-                //'imagePath' => '/images/activites/conference.png',
                 //'lienInscription' => 'https://www.facebook.com/lionsdegelis/',
                 'dateHeure' => '2021-02-06 10:00:00',
                 'typeActivite_id' => 2
+            )
+        );
+
+        //ajouter activite sport canin a 11h, les chiens cherchent des oeufs de pâques
+        DB::table('Activites')->insert(
+            array(
+                'titre' => 'Chasse aux oeufs',
+                'description' => 'Les chiens entrent en compétition pour savoir qui sera capable de ramener le plus d\'oeufs en un court laps de temps',
+                'lienInscription' => 'https://www.facebook.com/lionsdegelis/',
+                'dateHeure' => '2021-02-06 11:00:00',
+                'typeActivite_id' => 1
+            )
+        );
+
+        //ajouter competition de sentir de la drogue a 12h
+        DB::table('Activites')->insert(
+            array(
+                'titre' => 'Chasse aux drogues',
+                'description' => 'Les chiens entrent en compétition pour savoir qui sera capable de sentir le plus de drogues en un court laps de temps',
+                'lienInscription' => 'https://www.facebook.com/lionsdegelis/',
+                'dateHeure' => '2021-02-06 12:00:00',
+                'typeActivite_id' => 1
             )
         );
 

@@ -97,9 +97,12 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Nos exposants</h2>
-          <p>Voici les exposants qui seront présent lors de notre festival</p>
+            <h2>En cours de développement</h2>
+          <!--<p>Voici les exposants qui seront présent lors de notre festival</p>-->
         </div>
+      </div>
 
+          <!--
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
@@ -193,6 +196,7 @@
           </div>
         </div>
       </div>
+      -->
 
     </section><!-- End Speakers Section -->
 
@@ -314,14 +318,12 @@
 
     <!-- ======= Hotels Section ======= -->
 
-
     <!-- ======= Gallery Section ======= -->
     <section id="gallery">
 
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Gallery</h2>
-          <p>Check our gallery from the recent events</p>
+          <h2>Gallerie</h2>
         </div>
       </div>
 
