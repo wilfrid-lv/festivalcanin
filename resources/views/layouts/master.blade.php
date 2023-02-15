@@ -41,25 +41,15 @@
 <script src="{{asset('template/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
 <script src="{{asset('template/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
 <script src="{{asset('template/assets/vendor/php-email-form/validate.js')}}"></script>
-<<<<<<< HEAD
-=======
 
->>>>>>> 291d19442c8db1bfc05dfc021d947cbeb8e69af1
 
 <!---------------------------- Template Main JS File--------------------------->
 
-<<<<<<< HEAD
-<!---------------------------- Template Main JS File--------------------------->
-
-=======
->>>>>>> 291d19442c8db1bfc05dfc021d947cbeb8e69af1
 <script src="{{asset('template/assets/js/main.js')}}"></script>
 
 </body>
 
 </html>
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 291d19442c8db1bfc05dfc021d947cbeb8e69af1
+
