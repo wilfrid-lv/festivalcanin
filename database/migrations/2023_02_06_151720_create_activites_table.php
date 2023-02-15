@@ -59,11 +59,11 @@ class CreateActivitesTable extends Migration
             )
         );
 
-        //ajouter competition de sentir de la drogue a 12h
+        //ajouter competition sport ratier
         DB::table('Activites')->insert(
             array(
-                'titre' => 'Chasse aux drogues',
-                'description' => 'Les chiens entrent en compétition pour savoir qui sera capable de sentir le plus de drogues en un court laps de temps',
+                'titre' => 'Rattrapage de rats',
+                'description' => 'Les chiens entrent en compétition pour savoir qui sera capable de ramener les rats en un court laps de temps',
                 'lienInscription' => 'https://www.facebook.com/lionsdegelis/',
                 'dateHeure' => '2021-02-06 12:00:00',
                 'typeActivite_id' => 1
