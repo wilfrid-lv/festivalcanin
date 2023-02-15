@@ -43,7 +43,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>Festival Canin de Dégelis</strong>. Tout droits réservés
+        &copy;Copyright {{date('Y')}}<br><strong> Festival Canin de Dégelis</strong>. Tout droits réservés
       </div>
 
     </div>
