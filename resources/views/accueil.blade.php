@@ -56,6 +56,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
       <a class="buy-tickets scrollto" href="https://lepointdevente.com/"  target="_blank" >Achetez votre place</a>
+        <a class="login-menu scrollto" href="/login">Connexion</a>
 
     </div>
   </header><!-- End Header -->
