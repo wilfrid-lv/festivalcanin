@@ -13,6 +13,7 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
 
@@ -27,6 +28,9 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('template/assets//vendor/bootstrap/css/bootstrap.min.css') }}">
 
 </head>
+<script>
+    const dateLaunch = new Date("{{$information->dateDebut}}");
+</script>
 
 <body>
 
@@ -64,6 +68,7 @@
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
       <h1 class="mb-4 pb-0">Festival <br><span>Canin</span> de Dégelis</h1>
+        <h1 id="countdown"></h1>
       <a href="https://www.youtube.com/watch?v=yUQY0pD35Go" class="glightbox play-btn mb-4"></a>
       <a href="#about" class="about-btn scrollto">À propos du Festival</a>
     </div>
@@ -332,6 +337,8 @@
 
   <!-- Template Main JS File -->
   <script src="template/assets/js/main.js"></script>
+
+  <script src="js/countdown.js"></script>
 
 </body>
 
