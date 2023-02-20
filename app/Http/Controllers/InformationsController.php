@@ -15,7 +15,6 @@ class InformationsController extends Controller
 {
     public function accueil(){
         Carbon::setLocale('fr');
-        dd(PHP_OS_FAMILY);
         $information = Information::first();
         $niveaux = Niveau::all();
         //order by dateHeure
