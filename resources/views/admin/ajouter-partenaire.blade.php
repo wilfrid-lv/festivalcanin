@@ -2,49 +2,48 @@
 <html lang="en">
 
     <head>
-        @if(PHP_OS == "LINUX")
+            
         <meta charset="utf-8" />
-        <title>Modifier les informations</title>
+        <title>Ajouter Partenaires</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
-        <link rel="shortcut icon" href="{{ asset('template/assets//assets/images/favicon.ico') }}">
-        <link href="{{ asset('template/assets/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css') }}" />
-        <link href="{{ asset('template/assets/assets/css/icons.min.css" rel="stylesheet" type="text/css') }}" />
-        <link href="{{ asset('template/assets/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css') }}" />
-        @else 
-        <meta charset="utf-8" />
-        <title>Modifier les informations</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="Themesdesign" name="author" />
-        <link rel="shortcut icon" href="../template/assets//assets/images/favicon.ico">
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Bootstrap Css -->
         <link href="../template/assets/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
         <link href="../template/assets/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
         <link href="../template/assets/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-        @endif
+
     </head>
 
+    
     <body data-topbar="dark">
         <div id="layout-wrapper">
 
             <header id="page-topbar">
                 <div class="navbar-header">
                     <div class="d-flex">
+                        <!-- LOGO -->
                         <div class="navbar-brand-box">
                             <a href="index.html" class="logo logo-dark">
                                 <span class="logo-sm">
-                                    <img src="../template/assets//assets/images/logo-sm.png" alt="logo-sm" height="22">
+                                    <img src="assets/images/logo-sm.png" alt="logo-sm" height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="../template/assets//assets/images/logo-dark.png" alt="logo-dark" height="20">
+                                    <img src="assets/images/logo-dark.png" alt="logo-dark" height="20">
                                 </span>
                             </a>
 
                             <a href="index.html" class="logo logo-light">
                                 <span class="logo-sm">
-                                    <img src="../template/assets//assets/images/logo-sm.png" alt="logo-sm-light" height="22">
+                                    <img src="assets/images/logo-sm.png" alt="logo-sm-light" height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="../template/assets//assets/images/logo-light.png" alt="logo-light" height="20">
+                                    <img src="assets/images/logo-light.png" alt="logo-light" height="20">
                                 </span>
                             </a>
                         </div>
@@ -59,12 +58,13 @@
                         <div class="dropdown d-inline-block user-dropdown">
                             <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="rounded-circle header-profile-user" src="../template/assets//assets/images/users/avatar-1.jpg"
+                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
                                     alt="Header Avatar">
                                 <span class="d-none d-xl-inline-block ms-1">Julia</span>
                                 <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                             </button>
                             <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
                                 <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Profile</a>
                                 <a class="dropdown-item" href="#"><i class="ri-wallet-2-line align-middle me-1"></i> My Wallet</a>
                                 <a class="dropdown-item d-block" href="#"><span class="badge bg-success float-end mt-1">11</span><i class="ri-settings-2-line align-middle me-1"></i> Settings</a>
@@ -87,12 +87,15 @@
 
 
 
+            <!-- ========== Left Sidebar Start ========== -->
             <div class="vertical-menu">
 
                 <div data-simplebar class="h-100">
 
 
+                    <!--- Sidemenu -->
                     <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
                         <ul class="metismenu list-unstyled" id="side-menu">
                             <li class="menu-title">Menu</li>
                             <li>
@@ -101,7 +104,7 @@
                                     <span>Informations</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="modifierinfo">Modifier</a></li>
+                                    <li><a href="Informations/modifier-information.html">Modifier</a></li>
                                     <li><a href="horaire.html">Horaire</a></li>
                                 </ul>
                             </li>
@@ -111,7 +114,7 @@
                                     <span>Utilisateurs</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="Utilisateurs/liste-utilisateur.html">Lister</a></li> 
+                                    <li><a href="Utilisateurs/liste-utilisateur.html">Lister</a></li> <!-- ajouter un bouton supp dans cette page -->
                                     <li><a href="Utilisateurs/ajouter-utilisateur.html">Ajouter</a></li>
                                     <li><a href="Utilisateurs/modifier-utilisateur.html">Modifier</a></li>
                                     <li><a href="Utilisateurs/profil-utilisateur.html">Profil</a></li>
@@ -123,7 +126,7 @@
                                     <span>Equipe</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="Equipe/liste-equipe.html">Lister</a></li> 
+                                    <li><a href="Equipe/liste-equipe.html">Lister</a></li> <!-- ajouter un bouton supp dans cette page -->
                                     <li><a href="Equipe/ajouter-equipe.html">Ajouter</a></li>
                                     <li><a href="Equipe/modifier-equipe.html">Modifier</a></li>
                                     <li><a href="Equipe/profil-equipe.html">Profil</a></li>
@@ -135,18 +138,18 @@
                                     <span>Activités</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="Activites/liste-activite.html">Lister</a></li> 
+                                    <li><a href="Activites/liste-activite.html">Lister</a></li> <!-- ajouter un bouton supp dans cette page -->
                                     <li><a href="Activites/ajouter-activite.html">Ajouter</a></li>
                                     <li><a href="Activites/modifier-activite.html">Modifier</a></li>
                                 </ul>
                             </li>
-                            <li>
+                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                    <i class="ri-file-paper-2-fill"></i>
+                                    <i class="ri-mail-send-line"></i>
                                     <span>Articles</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="Articles/liste-article.html">Lister</a></li> 
+                                    <li><a href="Articles/liste-article.html">Lister</a></li> <!-- ajouter un bouton supp dans cette page -->
                                     <li><a href="Articles/ajouter-article.html">Ajouter</a></li>
                                     <li><a href="Articles/modifier-article.html">Modifier</a></li>
                                 </ul>
@@ -161,18 +164,71 @@
                                     <li><a href="ajouter-partenaire.html">Ajouter</a></li>
                                 </ul>
                             </li>
-
                         </ul>
+                    </div>
+                    <!-- Sidebar -->
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+            <div class="main-content">
+                <div class="page-content"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Ajout d'un partenaire</h4>
+                                        <div class="row mb-3">
+                                            <label for="dateDebut" class="col-sm-2 col-form-label">Nom</label>
+                                            <div class="col-sm-10">
+                                                <input class="form-control" type="text" id="dateDebut">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="dateFin" class="col-sm-2 col-form-label">niveau</label>
+                                            <div class="col-sm-10">
+                                                <select class="form-select" id="niveau" required>
+                                                    <option selected disabled value="">Aucun</option>
+                                                    <option>Or</option>
+                                                    <option>Argent</option>
+                                                    <option>Bronze</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Please select a valid state.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="lienVideo" class="col-sm-2 col-form-label">Lien de leur site</label>
+                                            <div class="col-sm-10">
+                                                <input class="form-control" type="text" placeholder="Le lien vers leur site web" id="lienVideo" value="">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="logo" class="col-sm-2 col-form-label">Ajouter leur logo</label>
+                                            <div class="col-sm-10">
+                                                <form action="#" class="dropzone">
+                                                    <div class="fallback">
+                                                        <input name="file" type="file" multiple="multiple">
+                                                    </div>
+                                                    <div class="dz-message needsclick">
+                                                        <div class="mb-3">
+                                                            <i class="display-4 text-muted ri-upload-cloud-2-line"></i>
+                                                        </div>
+                                                        
+                                                        <h4>Drop files here or click to upload.</h4>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="main-content">
-                
-                @yield("content")
-
-            </div>
-
             <!-- Right Sidebar -->
             <div class="right-bar">
                 <div data-simplebar class="h-100">
@@ -191,7 +247,7 @@
 
                     <div class="p-4">
                         <div class="mb-2">
-                            <img src="../template/assets//assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="layout-1">
+                            <img src="assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="layout-1">
                         </div>
 
                         <div class="form-check form-switch mb-3">
@@ -200,18 +256,18 @@
                         </div>
         
                         <div class="mb-2">
-                            <img src="../template/assets//assets/images/layouts/layout-2.jpg" class="img-fluid img-thumbnail" alt="layout-2">
+                            <img src="assets/images/layouts/layout-2.jpg" class="img-fluid img-thumbnail" alt="layout-2">
                         </div>
                         <div class="form-check form-switch mb-3">
-                            <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch" data-bsStyle="../template/assets//assets/css/bootstrap-dark.min.css" data-appStyle="../template/assets//assets/css/app-dark.min.css">
+                            <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch" data-bsStyle="assets/css/bootstrap-dark.min.css" data-appStyle="assets/css/app-dark.min.css">
                             <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
                         </div>
         
                         <div class="mb-2">
-                            <img src="../template/assets//assets/images/layouts/layout-3.jpg" class="img-fluid img-thumbnail" alt="layout-3">
+                            <img src="assets/images/layouts/layout-3.jpg" class="img-fluid img-thumbnail" alt="layout-3">
                         </div>
                         <div class="form-check form-switch mb-5">
-                            <input class="form-check-input theme-choice" type="checkbox" id="rtl-mode-switch" data-appStyle="../template/assets//assets/css/app-rtl.min.css">
+                            <input class="form-check-input theme-choice" type="checkbox" id="rtl-mode-switch" data-appStyle="assets/css/app-rtl.min.css">
                             <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
                         </div>
 
@@ -225,26 +281,20 @@
             <div class="rightbar-overlay"></div>
 
             <!-- JAVASCRIPT -->
-            <script src="public/template/assets/assets/libs/jquery/jquery.min.js"></script>
-            <script src="public/template/assets/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-            <script src="public/template/assets/assets/libs/metismenu/metisMenu.min.js"></script>
-            <script src="public/template/assets/assets/libs/simplebar/simplebar.min.js"></script>
-            <script src="public/template/assets/assets/libs/node-waves/waves.min.js"></script>
+            <script src="assets/libs/jquery/jquery.min.js"></script>
+            <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+            <script src="assets/libs/simplebar/simplebar.min.js"></script>
+            <script src="assets/libs/node-waves/waves.min.js"></script>
 
-            <script src="public/template/assets/assets/libs/tinymce/tinymce.min.js"></script>
-
-            <script src="public/template/assets/assets/libs/dropzone/min/dropzone.min.js"></script>
+            <!--tinymce js-->
+            <script src="assets/libs/tinymce/tinymce.min.js"></script>
 
             <!-- init js -->
-            <script src="public/template/assets/assets/js/pages/form-editor.init.js"></script>
-            <script src="public/template/assets/assets/js/pages/form-element.init.js"></script>
-            <script src="public/template/assets/js/pages/form-validation.init.js"></script>
+            <script src="assets/js/pages/form-editor.init.js"></script>
+            <script src="assets/js/pages/form-validation.init.js"></script>
 
-            <script src="public/template/assets/libs/table-edits/build/table-edits.min.js"></script>
-            <script src="public/template/assets/js/pages/table-editable.init.js"></script> 
-            
-
-            <script src="public/template/assets/assets/js/app.js"></script>
+            <script src="assets/js/app.js"></script>
         </div>
     </body>
 </html>

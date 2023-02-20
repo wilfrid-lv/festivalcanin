@@ -79,6 +79,17 @@ Route::get('/admin/articles', function () {
     return view('admin/arcticles');
 });
 
+Route::get('/admin/modifierinfo', function () {
+    return view('admin/modifier-information');
+});
+
+Route::get('/admin/ajoutpartenaire', function () {
+    return view('admin/ajouter-partenaire');
+});
+Route::get('/admin/listepartenaire', function () {
+    return view('admin/liste-partenaires');
+});
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

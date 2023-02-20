@@ -2,17 +2,25 @@
 <html lang="en">
 
     <head>
-            
+        @if(PHP_OS == "LINUX")
         <meta charset="utf-8" />
-        <title>Form Editor | Upcube - Admin & Dashboard Template</title>
+        <title>Modifier les informations</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
-        <link rel="shortcut icon" href="../template/assets//assets/images/favicon.ico">
-        <link href="../template/assets//assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-        <link href="../template/assets//assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="../template/assets//assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-
+        <link rel="shortcut icon" href="{{ asset('../template/assets/assets/images/favicon.ico') }}">
+        <link href="{{ asset('../template/assets/assets/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('../template/assets/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('../template/assets/assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
+        @else
+        <meta charset="utf-8" />
+        <title>Modifier les informations</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Themesdesign" name="author" />
+        <link rel="shortcut icon" href="../template/assets/assets/images/favicon.ico">
+        <link href="../template/assets/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <link href="../template/assets/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="../template/assets/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        @endif
     </head>
 
     
@@ -25,19 +33,19 @@
                         <div class="navbar-brand-box">
                             <a href="index.html" class="logo logo-dark">
                                 <span class="logo-sm">
-                                    <img src="../template/assets//assets/images/logo-sm.png" alt="logo-sm" height="22">
+                                    <img src="../template/assets/assets/images/logo-sm.png" alt="logo-sm" height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="../template/assets//assets/images/logo-dark.png" alt="logo-dark" height="20">
+                                    <img src="../template/assets/assets/images/logo-dark.png" alt="logo-dark" height="20">
                                 </span>
                             </a>
 
                             <a href="index.html" class="logo logo-light">
                                 <span class="logo-sm">
-                                    <img src="../template/assets//assets/images/logo-sm.png" alt="logo-sm-light" height="22">
+                                    <img src="../template/assets/assets/images/logo-sm.png" alt="logo-sm-light" height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="../template/assets//assets/images/logo-light.png" alt="logo-light" height="20">
+                                    <img src="../template/assets/assets/images/logo-light.png" alt="logo-light" height="20">
                                 </span>
                             </a>
                         </div>
@@ -52,7 +60,7 @@
                         <div class="dropdown d-inline-block user-dropdown">
                             <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="rounded-circle header-profile-user" src="../template/assets//assets/images/users/avatar-1.jpg"
+                                <img class="rounded-circle header-profile-user" src="../template/assets/assets/images/users/avatar-1.jpg"
                                     alt="Header Avatar">
                                 <span class="d-none d-xl-inline-block ms-1">Julia</span>
                                 <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
@@ -94,7 +102,7 @@
                                     <span>Informations</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="Informations/modifier-information.html">Modifier</a></li>
+                                    <li><a href="modifierinfo">Modifier</a></li>
                                     <li><a href="horaire.html">Horaire</a></li>
                                 </ul>
                             </li>
@@ -142,6 +150,16 @@
                                     <li><a href="Articles/liste-article.html">Lister</a></li> 
                                     <li><a href="Articles/ajouter-article.html">Ajouter</a></li>
                                     <li><a href="Articles/modifier-article.html">Modifier</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="ri-mail-send-line"></i>
+                                    <span>Partenaires</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="liste-partenaires.html">Lister</a></li> <!-- ajouter un bouton supp dans cette page -->
+                                    <li><a href="ajouter-partenaire.html">Ajouter</a></li>
                                 </ul>
                             </li>
 
@@ -252,7 +270,7 @@
 
                     <div class="p-4">
                         <div class="mb-2">
-                            <img src="../template/assets//assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="layout-1">
+                            <img src="../template/assets/assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="layout-1">
                         </div>
 
                         <div class="form-check form-switch mb-3">
@@ -261,18 +279,18 @@
                         </div>
         
                         <div class="mb-2">
-                            <img src="../template/assets//assets/images/layouts/layout-2.jpg" class="img-fluid img-thumbnail" alt="layout-2">
+                            <img src="../template/assets/assets/images/layouts/layout-2.jpg" class="img-fluid img-thumbnail" alt="layout-2">
                         </div>
                         <div class="form-check form-switch mb-3">
-                            <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch" data-bsStyle="../template/assets//assets/css/bootstrap-dark.min.css" data-appStyle="../template/assets//assets/css/app-dark.min.css">
+                            <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch" data-bsStyle="../assets/assets/css/bootstrap-dark.min.css" data-appStyle="../assets/assets/css/app-dark.min.css">
                             <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
                         </div>
         
                         <div class="mb-2">
-                            <img src="../template/assets//assets/images/layouts/layout-3.jpg" class="img-fluid img-thumbnail" alt="layout-3">
+                            <img src="../template/assets/assets/images/layouts/layout-3.jpg" class="img-fluid img-thumbnail" alt="layout-3">
                         </div>
                         <div class="form-check form-switch mb-5">
-                            <input class="form-check-input theme-choice" type="checkbox" id="rtl-mode-switch" data-appStyle="../template/assets//assets/css/app-rtl.min.css">
+                            <input class="form-check-input theme-choice" type="checkbox" id="rtl-mode-switch" data-appStyle="../assets/assets/css/app-rtl.min.css">
                             <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
                         </div>
 
@@ -286,22 +304,22 @@
             <div class="rightbar-overlay"></div>
 
             <!-- JAVASCRIPT -->
-            <script src="../template/assets//assets/libs/jquery/jquery.min.js"></script>
-            <script src="../template/assets//assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-            <script src="../template/assets//assets/libs/metismenu/metisMenu.min.js"></script>
-            <script src="../template/assets//assets/libs/simplebar/simplebar.min.js"></script>
-            <script src="../template/assets//assets/libs/node-waves/waves.min.js"></script>
+            <script src="public/template/assets/libs/jquery/jquery.min.js"></script>
+            <script src="public/template/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="public/template/assets/libs/metismenu/metisMenu.min.js"></script>
+            <script src="public/template/assets/libs/simplebar/simplebar.min.js"></script>
+            <script src="public/template/assets/libs/node-waves/waves.min.js"></script>
 
-            <script src="../template/assets//assets/libs/tinymce/tinymce.min.js"></script>
+            <!-- <script src="articles.blade.php"></script> -->
 
-            <script src="../template/assets//assets/libs/dropzone/min/dropzone.min.js"></script>
+            <script src="public/template/assetslibs/dropzone/min/dropzone.min.js"></script>
 
             <!-- init js -->
-            <script src="../template/assets//assets/js/pages/form-editor.init.js"></script>
-            <script src="../template/assets//assets/js/pages/form-element.init.js"></script>
+            <script src="public/template/assets/js/pages/form-editor.init.js"></script>
+            <script src="public/template/assets/js/pages/form-element.init.js"></script>
             
 
-            <script src="../template/assets//assets/js/app.js"></script>
+            <script src="public/template/assets/js/app.js"></script>
         </div>
     </body>
 </html>
