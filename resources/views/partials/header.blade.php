@@ -1,11 +1,22 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title> </title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+</head>
+
+
 <!-- ======= Header ======= -->
 <header id="header" class="d-flex align-items-center ">
     <div class="container-fluid container-xxl d-flex align-items-center">
 
       <div id="logo" class="me-auto">
         <!-- Uncomment below if you prefer to use a text logo -->
-        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
-        <a href="index.html" class="scrollto"><img src="assets/img/logo.png" alt="" title=""></a>
+          <h1><a href="/">Festival<span>Canin</span></a></h1>
+{{--        <a href="index.html" class="scrollto"><img src="assets/img/logo.png" alt="" title=""></a>--}}
       </div>
 
 
@@ -26,6 +37,8 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
       <a class="buy-tickets scrollto" href="https://lepointdevente.com/" target="_blank">Achetez votre billet</a>
+        <a class="login-menu scrollto" href="/login">Connexion</a>
+
 
     </div>
   </header><!-- End Header -->
