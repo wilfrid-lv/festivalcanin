@@ -4,7 +4,7 @@
     <head>
             
         <meta charset="utf-8" />
-        <title>Modifier Informations</title>
+        <title>Lister Partenaires</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
@@ -197,7 +197,7 @@
                                                     @foreach($lesPartenaires as $unPartenaire)
                                                         <tr>
                                                             <td data-field="nom" style="width: 80px">{{$unPartenaire->nom}}</td>
-                                                            <td data-field="niveau">{{$unPartenaire->niveau_id}}</td>
+                                                            <td data-field="niveau">{{$unPartenaire->niveau->nom}}</td>
                                                             <td data-field="lien">{{$unPartenaire->lien}}</td>
                                                             <td data-field="logo">{{$unPartenaire->imagePath}}</td>
                                                             <td style="width: 100px">
