@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InformationsController;
+use App\Http\Controllers\PartenairesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -79,16 +80,16 @@ Route::get('/admin/articles', function () {
     return view('admin/arcticles');
 });
 
-Route::get('/admin/modifierinfo', function () {
+Route::get('/admin/modifierInfo', function () {
     return view('admin/modifier-information');
 });
 
-Route::get('/admin/ajoutpartenaire', function () {
+Route::get('/admin/ajouterPartenaire', function () {
     return view('admin/ajouter-partenaire');
 });
-Route::get('/admin/listepartenaire', function () {
-    return view('admin/liste-partenaires');
-});
+Route::get('/admin/listerPartenaires', [PartenairesController::class, 'lister']);
+
+
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

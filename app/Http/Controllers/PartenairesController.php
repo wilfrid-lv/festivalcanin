@@ -11,10 +11,10 @@ class PartenairesController extends Controller
     //
     public function lister()
     {
-        $partenaire = Partenaire::all();
+        $lesPartenaires = Partenaire::all();
         $niveau = Niveau::all();
-        return view('listepartenaire', ['lesPartenaires' => $partenaire,
-                                     'niveau' => $niveau]);
+        return view('admin/liste-partenaires')->with('lesPartenaires', $lesPartenaires)
+                                      ->with('niveau', $niveau);
     
     }
 }
