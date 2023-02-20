@@ -245,7 +245,7 @@
       </div>
 
       <div class="gallery-slider swiper">
-        <div class="swiper-wrapper align-items-center justify-content-center">
+        <div class="swiper-wrapper align-items-center">
             @foreach($fichiers as $fichier)
                 <div class="swiper-slide"><a href="{{asset("storage/".$fichier)}}" class="gallery-lightbox"><img src="{{asset("storage/".$fichier)}}" class="img-fluid" alt=""></a></div>
                 @if($loop->iteration == 6)
@@ -334,7 +334,6 @@
 
   <!-- Vendor JS Files -->
   <script src="template/assets/vendor/aos/aos.js"></script>
-  <script src="template/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <script src="template/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="template/assets/vendor/glightbox/js/glightbox.min.js"></script>
