@@ -1,6 +1,8 @@
 @extends("layouts.master")
 
+@section('title', 'Activités')
 @include('partials.header')
+
 @section("content")
 
 

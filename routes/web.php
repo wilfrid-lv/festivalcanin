@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InformationsController;
+use App\Http\Controllers\PartenairesController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +34,8 @@ Route::get('/welcome', function () {
 */
 
 Route::get('/', [InformationsController::class, 'accueil']);
+Route::get('/partenaires', [PartenairesController::class, 'partenaires']);
+
 
 Route::get('/footer', function () {
     return view('partials.footer');
@@ -82,7 +86,6 @@ Route::get('/admin/articles', function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 /*
 |--------------------------------------------------------------------------

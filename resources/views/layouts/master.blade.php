@@ -4,6 +4,10 @@
 <head>
 
 
+    <!-- TITLE -->
+
+    <title> @yield('title') | Accueil</title>
+
     <!-- Favicons -->
     <link href="template/assets/img/favicon.png" rel="icon">
     <link href="template/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
