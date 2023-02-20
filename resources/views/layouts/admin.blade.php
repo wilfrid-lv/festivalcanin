@@ -157,8 +157,8 @@
                                     <span>Partenaires</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="liste-partenaires.html">Lister</a></li> <!-- ajouter un bouton supp dans cette page -->
-                                    <li><a href="ajouter-partenaire.html">Ajouter</a></li>
+                                    <li><a href="listerPartenaires.html">Lister</a></li> <!-- ajouter un bouton supp dans cette page -->
+                                    <li><a href="ajouterPartenaire">Ajouter</a></li>
                                 </ul>
                             </li>
 
