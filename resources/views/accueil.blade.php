@@ -125,19 +125,6 @@
           <h2>Programmation de l'évènement</h2>
         </div>
 
-        <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
-          <li class="nav-item">
-            <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Day 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Day 2</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#day-3" role="tab" data-bs-toggle="tab">Day 3</a>
-          </li> -->
-        </ul>
-
-
         <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
 
           <!-- Schdule Day 1 -->
@@ -172,16 +159,6 @@
 
               @endforeach
 
-          <!-- End Schdule Day 1 -->
-          <!-- Schdule Day 2 -->
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
-          </div>
-          <!-- End Schdule Day 2 -->
-
-          <!-- Schdule Day 3 -->
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
-          </div>
-          <!-- End Schdule Day 2 -->
 
         </div>
 
