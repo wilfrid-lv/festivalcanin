@@ -107,6 +107,7 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Nos exposants</h2>
+                <p>Voici les exposants qui seront présent lors de notre festival</p>
             <h2>En cours de développement</h2>
           <!--<p>Voici les exposants qui seront présent lors de notre festival</p>-->
         </div>
