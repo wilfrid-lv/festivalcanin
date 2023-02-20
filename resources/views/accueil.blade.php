@@ -56,7 +56,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
       <a class="buy-tickets scrollto" href="https://lepointdevente.com/"  target="_blank" >Achetez votre place</a>
-        <a class="login-menu scrollto" href="/login">Connexion</a>
+        <a class="login-menu scrollto" style="cursor: pointer" data-toggle="modal" data-target="#loginModal">{{ __('Connexion') }}</a>
 
     </div>
   </header><!-- End Header -->
@@ -302,6 +302,7 @@
   </main><!-- End #main -->
 
   @include('partials.footer')
+  @include('partials.modal')
 
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

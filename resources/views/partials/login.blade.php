@@ -1,11 +1,13 @@
+
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="loginModal">{{ __('Login') }}</h5>
+                <h5 class="modal-title" id="loginModal">{{ __('Grand Festival Canin') }}</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
+                    <span aria-hidden="true">&times;</span>
                 </button>
+
             </div>
             <div class="modal-body">
                 <form method="POST" action="{{ route('login') }}">
@@ -58,13 +60,34 @@
                             </button>
 
                             @if (Route::has('password.request'))
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Mot de passe oublié ?') }}
-                                </a>
+                            <a class="btn btn-link" href="{{ route('password.request') }}">
+                                {{ __('Mot de passe oublié ? ') }}
+                            </a>
+
                             @endif
+                            @if (Route::has('register'))
+                                        <a class="btn btn-link" href="{{ route('register') }}">{{ __("Je n'ai pas de compte ? ") }}</a
+                            @endif
+
+
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+</div>
+
+@section('scripts')
+@parent
+
+@if($errors->has('email') || $errors->has('password'))
+<script>
+    $(function() {
+        $('#loginModal').modal({
+            show: true
+        });
+    });
+</script>
+@endif
+@endsection

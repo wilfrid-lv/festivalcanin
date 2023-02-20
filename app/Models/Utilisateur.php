@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Utilisateur
- * 
+ *
  * @property int $id
  * @property string $email
  * @property string $motdepasse
@@ -25,7 +25,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string|null $remember_token
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * 
+ *
  * @property Role $role
  * @property Collection|Article[] $articles
  * @property Collection|UtilisateursImage[] $utilisateurs_images

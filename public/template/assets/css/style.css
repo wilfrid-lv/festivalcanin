@@ -1359,6 +1359,44 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Login menu
+--------------------------------------------------------------*/
+
+
+.login-menu {
+    color: #000000;
+    background: #e9edfb;
+    padding: 7px 22px;
+    margin: 0 0 0 15px;
+    border-radius: 50px;
+    border: 2px solid #10538D;
+    transition: all ease-in-out 0.3s;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.login-menu:hover   {
+    background: none;
+    color: #fff;
+}
+
+.login-menu:focus {
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .login-menu {
+        margin: 0 15px 0 0;
+    }
+}
+
+
+
+
+
+/*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
 #contact {

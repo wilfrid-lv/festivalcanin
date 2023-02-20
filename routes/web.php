@@ -21,10 +21,6 @@ use App\Http\Controllers\InformationsController;
 |--------------------------------------------------------------------------
 */
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
-
 /*
 |--------------------------------------------------------------------------
 | Route pages principales
@@ -53,10 +49,6 @@ Route::get('/horaire', function () {
     return view('horaire');
 });
 
-Route::get('/horaire', function () {
-    return view('horaire');
-});
-
 Route::get('/galerie', function () {
     return view('galerie');
 });
@@ -76,13 +68,14 @@ Route::get('/contact', function () {
 */
 
 Route::get('/admin/articles', function () {
-    return view('admin/arcticles');
-});
+    return view('admin/arcticles');})->middleware('auth:admin');
+
+
+
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 /*
 |--------------------------------------------------------------------------
