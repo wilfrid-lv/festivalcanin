@@ -17,4 +17,26 @@ class PartenairesController extends Controller
                                       ->with('niveau', $niveau);
     
     }
+
+    public function ajouter(Request $request)
+    {
+        $request->validate([
+            'nom' => ['required', 'string', 'min:3', 'max:50' ],
+            'niveau' => ['required', 'integer' ],
+            'lien' => ['required', 'string', 'min:10', 'max:250' ],
+            'imagePath' => ['required', 'string', 'min:3', 'max:250' ],
+        ]);
+        
+        $nouveauPartenaire = new Partenaire();
+        $nouveauPartenaire->nom = $request->input('nom');
+        $nouveauPartenaire->niveau_id = $request->input('niveau');
+        $nouveauPartenaire->lien = $request->input('lien');
+        $nouveauPartenaire->imagePath = $request->input('imagePath');
+        // $lesNiveaux = Niveau::all();
+        $nouveauPartenaire->save();
+        // return view('admin/ajouter-partenaire')->with('lesNiveaux', $lesNiveaux);
+        redirect()->route('admin.partenaire.lister')->with('message', ' ajouté.');
+    
+    }
+    
 }

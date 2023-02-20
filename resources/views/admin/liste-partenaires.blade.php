@@ -2,24 +2,29 @@
 <html lang="en">
 
     <head>
-            
+        @if(PHP_OS == "LINUX")
         <meta charset="utf-8" />
         <title>Lister Partenaires</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
-        <!-- App favicon -->
+        <link rel="shortcut icon" href="{{ asset('template/assets/assets/images/favicon.ico') }}">
+        <link href="{{ asset('template/assets/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css') }}" />
+        <link href="{{ asset('template/assets/assets/css/icons.min.css" rel="stylesheet" type="text/css') }}" />
+        <link href="{{ asset('template/assets/assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
+        @else    
+        <meta charset="utf-8" />
+        <title>Lister Partenaires</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesdesign" name="author" />
         <link rel="shortcut icon" href="../template/assets/assets/images/favicon.ico">
-
-        <!-- Bootstrap Css -->
         <link href="../template/assets/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-        <!-- Icons Css -->
         <link href="../template/assets/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <!-- App Css-->
         <link href="../template/assets/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-
+        @endif
     </head>
-
+    
     
     <body data-topbar="dark">
         <div id="layout-wrapper">
@@ -200,11 +205,6 @@
                                                             <td data-field="niveau">{{$unPartenaire->niveau->nom}}</td>
                                                             <td data-field="lien">{{$unPartenaire->lien}}</td>
                                                             <td data-field="logo">{{$unPartenaire->imagePath}}</td>
-                                                            <td style="width: 100px">
-                                                                <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
-                                                                    <i class="fas fa-pencil-alt"></i>
-                                                                </a>
-                                                            </td>
                                                         </tr>
                                                     @endforeach
                                                 </tbody>
