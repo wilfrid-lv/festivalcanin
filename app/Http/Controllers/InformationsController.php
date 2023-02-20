@@ -9,10 +9,12 @@ use App\Models\Niveau;
 use App\Models\Activite;
 use App\Models\QuestionsReponse;
 use Illuminate\Support\Facades\Storage;
+use Carbon\Carbon;
 
 class InformationsController extends Controller
 {
     public function accueil(){
+        Carbon::setLocale('fr');
         $information = Information::first();
         $niveaux = Niveau::all();
         //order by dateHeure

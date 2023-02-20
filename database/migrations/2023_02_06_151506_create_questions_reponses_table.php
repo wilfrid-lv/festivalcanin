@@ -34,6 +34,20 @@ class CreateQuestionsReponsesTable extends Migration
                 'reponse' => 'La garderie pour chien est un service qui consiste à garder votre chien pendant une période de temps déterminée. Il s\'agit d\'un service qui est offert par des professionnels qui ont l\'expérience et les connaissances nécessaires pour s\'occuper de votre chien.'
             )
         );
+
+        DB::table('QuestionsReponses')->insert(
+            array(
+                'question' => 'Qu\'est-ce que la formation de chien?',
+                'reponse' => 'La formation de chien est un service qui consiste à former votre chien à des exercices physiques et mentaux. Il s\'agit d\'un service qui est offert par des professionnels qui ont l\'expérience et les connaissances nécessaires pour former votre chien.'
+            )
+        );
+
+        DB::table('QuestionsReponses')->insert(
+            array(
+                'question' => 'Qu\'est-ce qu\'un chien?',
+                'reponse' => 'Un chien est un animal domestique qui est considéré comme un membre de la famille. Il s\'agit d\'un animal qui est très affectueux et qui est très attaché à son maître.'
+            )
+        );
     }
 
     /**

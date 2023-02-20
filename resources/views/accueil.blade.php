@@ -30,6 +30,7 @@
 </head>
 <script>
     const dateLaunch = new Date("{{$information->dateDebut}}");
+    const dateFin = new Date("{{$information->dateFin}}");
 </script>
 
 <body>
@@ -90,7 +91,9 @@
           </div>
           <div class="col-lg-3">
             <h3>Quand</h3>
-            <p>Le samedi et le dimanche<br>26-27 août</p>
+              <p>Du {{Carbon\Carbon::parse($information->dateDebut)->translatedFormat('l j')}}
+                 au</br> {{Carbon\Carbon::parse($information->dateFin)->translatedFormat('l j F Y')}}</p>
+            <!--<p>Le samedi et le dimanche<br>26-27 août</p>-->
           </div>
         </div>
       </div>

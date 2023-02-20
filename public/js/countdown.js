@@ -20,12 +20,19 @@ const intvl = setInterval(() => {
         ${days}:${hours}:${minutes}:${seconds} <br>avant l'évènement
     `;
 
-    //if launch date passed
-    if(distance < 0){
+    //if event is over using var dateFin
+    //check if current date is after dateFin
+    if(now > dateFin){
         //stop countdown
         clearInterval(intvl);
         //style and output text
-        countdown.style.color = '#17a2b8';
-        countdown.innerHTML = 'Launched!';
+        //countdown.style.color = '#dc3545';
+        countdown.innerHTML = 'L\'évènement est terminé! <br> Merci d\'avoir participé!';
+    } else if (distance < 0){
+        //stop countdown
+        clearInterval(intvl);
+        //style and output text
+        //countdown.style.color = '#17a2b8';
+        countdown.innerHTML = 'L\'évènement est en cours!';
     }
 });
