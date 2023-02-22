@@ -2,21 +2,27 @@
 <html lang="en">
 
     <head>
-            
+        @if(PHP_OS == "LINUX")
         <meta charset="utf-8" />
         <title>Ajouter Partenaires</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
-        <!-- App favicon -->
+        <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}">
+        <link href="{{ asset('../template/assets/assets/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('../template/assets/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('../template/assets/assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
+        @else
+        <meta charset="utf-8" />
+        <title>Ajouter Partenaires</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesdesign" name="author" />
         <link rel="shortcut icon" href="assets/images/favicon.ico">
-
-        <!-- Bootstrap Css -->
         <link href="../template/assets/assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-        <!-- Icons Css -->
         <link href="../template/assets/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <!-- App Css-->
         <link href="../template/assets/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        @endif
 
     </head>
 
@@ -180,16 +186,16 @@
                                     <div class="card-body">
                                         <h4 class="card-title">Ajout d'un partenaire</h4>
                                         <div class="row mb-3">
-                                            <label for="dateDebut" class="col-sm-2 col-form-label">Nom</label>
+                                            <label for="nom" class="col-sm-2 col-form-label">Nom</label>
                                             <div class="col-sm-10">
-                                                <input class="form-control" type="text" id="dateDebut">
+                                                <input class="form-control" type="text" id="nom">
                                             </div>
                                         </div>
                                         <div class="row mb-3">
-                                            <label for="dateFin" class="col-sm-2 col-form-label">niveau</label>
+                                            <label for="niveau_id" class="col-sm-2 col-form-label">Niveau</label>
                                             <div class="col-sm-10">
-                                                <select class="form-select" id="niveau" required>
-                                                    <option selected disabled value="">Aucun</option>
+                                                <select class="form-select" id="niveau_id" required>
+                                                    <option selected disabled value="niveau_id">Aucun</option>
                                                     <option>Or</option>
                                                     <option>Argent</option>
                                                     <option>Bronze</option>
@@ -200,13 +206,13 @@
                                             </div>
                                         </div>
                                         <div class="row mb-3">
-                                            <label for="lienVideo" class="col-sm-2 col-form-label">Lien de leur site</label>
+                                            <label for="lien" class="col-sm-2 col-form-label">Lien de leur site</label>
                                             <div class="col-sm-10">
-                                                <input class="form-control" type="text" placeholder="Le lien vers leur site web" id="lienVideo" value="">
+                                                <input class="form-control" type="text" placeholder="Le lien vers leur site web" id="lien" value="">
                                             </div>
                                         </div>
                                         <div class="row mb-3">
-                                            <label for="logo" class="col-sm-2 col-form-label">Ajouter leur logo</label>
+                                            <label for="imagePath" class="col-sm-2 col-form-label">Ajouter leur logo</label>
                                             <div class="col-sm-10">
                                                 <form action="#" class="dropzone">
                                                     <div class="fallback">

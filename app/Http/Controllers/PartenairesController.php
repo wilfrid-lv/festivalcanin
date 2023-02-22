@@ -34,8 +34,8 @@ class PartenairesController extends Controller
         $nouveauPartenaire->imagePath = $request->input('imagePath');
         // $lesNiveaux = Niveau::all();
         $nouveauPartenaire->save();
-        // return view('admin/ajouter-partenaire')->with('lesNiveaux', $lesNiveaux);
-        redirect()->route('admin.partenaire.lister')->with('message', ' ajouté.');
+        return view('admin/ajouterPartenaire')/*->with('lesNiveaux', $lesNiveaux)*/;
+        //redirect()->route('admin.partenaire.ajouter')/*->with('message', ' ajouté.')*/;
     
     }
     
