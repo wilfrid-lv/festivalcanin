@@ -176,16 +176,22 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="card-title">Modifier les informations de l'événement</h4>
-                                        <div class="row mb-3">
-                                            <label for="dateDebut" class="col-sm-2 col-form-label">Date de début</label>
-                                            <div class="col-sm-10">
-                                                <input class="form-control" type="date" id="dateDebut">
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label for="dateFin" class="col-sm-2 col-form-label">Date de fin</label>
-                                            <div class="col-sm-10">
-                                                <input class="form-control" type="date" id="dateFin" value="">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="row mb-3">
+                                                    <label for="dateDebut" class="col-sm-4 col-form-label">Date de début</label>
+                                                    <div class="col-sm-5">
+                                                        <input class="form-control" type="date" id="dateDebut">
+                                                    </div>
+                                                </div>
+                                            </div>   
+                                            <div class="col-md-6">
+                                                <div class="row mb-3">
+                                                    <label for="dateFin" class="col-sm-2 col-form-label">Date de fin</label>
+                                                    <div class="col-sm-5">
+                                                        <input class="form-control" type="date" id="dateFin" value="">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="row mb-3">
@@ -198,7 +204,7 @@
                                             <label for="adresse" class="col-sm-2 col-form-label">Description</label>
                                             <div class="col-sm-10">
                                                 <form method="post">
-                                                    <textarea id="elm1" name="area" placeholder="Description" value=""></textarea>
+                                                    <textarea required class="form-control" rows="5" placeholder="Description"></textarea>
                                                 </form>
                                             </div>
                                         </div>
@@ -218,7 +224,7 @@
                                             <label for="adresse" class="col-sm-2 col-form-label">Description Localisation</label>
                                             <div class="col-sm-10">
                                                 <form method="post">
-                                                    <textarea id="elm1" name="area" placeholder="Description Localisation" value=""></textarea>
+                                                    <textarea required class="form-control" rows="5" placeholder="Description Localisation"></textarea>
                                                 </form>
                                             </div>
                                         </div>

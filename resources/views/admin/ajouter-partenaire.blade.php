@@ -196,9 +196,9 @@
                                             <div class="col-sm-10">
                                                 <select class="form-select" id="niveau_id" required>
                                                     <option selected disabled value="niveau_id">Aucun</option>
-                                                    <option>Or</option>
-                                                    <option>Argent</option>
-                                                    <option>Bronze</option>
+                                                    @foreach ($niveau as $unNiveau) 
+                                                    <option>{{$unNiveau->nom}}</option>
+                                                    @endforeach
                                                 </select>
                                                 <div class="invalid-feedback">
                                                     Please select a valid state.
@@ -223,10 +223,20 @@
                                                             <i class="display-4 text-muted ri-upload-cloud-2-line"></i>
                                                         </div>
                                                         
-                                                        <h4>Drop files here or click to upload.</h4>
+                                                        <h4>Déposer vos photo.</h4>
                                                     </div>
                                                 </form>
                                             </div>
+                                        </div>
+                                        <div class="mb-0">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light me-1">
+                                                        Enregistrer
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect">
+                                                        Annuler
+                                                    </button>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
