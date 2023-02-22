@@ -271,7 +271,11 @@
               <h3>{{$niveau->nom}}</h3>
                   <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
                   @foreach($niveau->partenaires as $partenaire)
-                      <div class="col-lg-3 col-md-4 col-xs-6">
+                      @if($niveau->nom == "Or")
+                          <div class="col-lg-5 col-md-2 col-xs-8 h-50">
+                      @else
+                          <div class="col-lg-3 col-md-4 col-xs-6">
+                      @endif
                           <a target="_blank" href="{{$partenaire->lien}}">
                               <div class="supporter-logo">
                                   <img src="{{asset($partenaire->imagePath)}}" class="img-fluid" alt="{{$partenaire->nom}}">
@@ -342,9 +346,11 @@
 
   <!-- Template Main JS File -->
   <script src="template/assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
 
-  <script src="js/countdown.js"></script>
+  <script src="js/countdown.js" defer="defer"></script>
 
-</body>
+</body> h-75
 
 </html>

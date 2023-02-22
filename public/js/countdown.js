@@ -18,6 +18,13 @@ if(dateNow > dateFin){
     countdown.innerHTML = "L\'évènement est en cours!";
 }
 else{
+    $("#countdown").countdown(dateLaunch, function(event){
+        $(this).html(event.strftime(''
+            + '<div class="holder m-2 h2">%D jour%!d %H heure%!H %M minute%!m</div>'
+            //+ '<div class="holder m-2"><span class="h1 font-weight-bold">%S</span> Sec</div>'
+        ))
+    })
+    /*
     const intvl = setInterval(() => {
         //get todays date and time (ms)
         const now = new Date().getTime();
@@ -33,8 +40,12 @@ else{
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         //display result
-        countdown.innerHTML = `
-        ${days}:${hours}:${minutes}:${seconds} <br>avant l'évènement `;
+        countdown.innerHTML = '<div class="holder m-2"><span class="h1 font-weight-bold">%D</span> Day%!d</div>'
+        + '<div class="holder m-2"><span class="h1 font-weight-bold">%H</span> Hr</div>'
+        + '<div class="holder m-2"><span class="h1 font-weight-bold">%M</span> Min</div>'
+        + '<div class="holder m-2"><span class="h1 font-weight-bold">%S</span> Sec</div>'
+        //countdown.innerHTML = `
+        //${days}:${hours}:${minutes}:${seconds} <br>avant l'évènement `;
 
-    }, 1000);
+    }, 1000);*/
 }

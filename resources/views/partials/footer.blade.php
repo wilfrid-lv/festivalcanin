@@ -5,8 +5,11 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <img src="assets/img/logo.png" alt="Festival Canin de Dégelis">
-              <p>{{$information->description}}</p>
+              <p><strong>
+                      Festival Canin de Dégelis
+                  </strong>
+                  <br>
+              {{$information->description}}</p>
           </div>
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Liens</h4>
@@ -22,9 +25,7 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contactez-nous</h4>
             <p>
-              <strong>Adresse:</strong> {{$information->adresse}}<br>
-              <strong>Téléphone:</strong> {{$information->noTelephoneContact}}<br>
-              <strong>Email:</strong> {{$information->courrielContact}}<br>
+              <strong>Adresse:</strong> {{$information->adresse}}
             </p>
 
             <div class="social-links">

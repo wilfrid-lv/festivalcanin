@@ -8,35 +8,6 @@
     <p>Envoyez-nous un message !</p>
   </div>
 
-  <div class="row contact-info">
-
-    <div class="col-md-4">
-      <div class="contact-address">
-        <i class="bi bi-geo-alt"></i>
-        <h3>Adresse</h3>
-        <address>
-            {{$information->adresse}}
-        </address>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="contact-phone">
-        <i class="bi bi-phone"></i>
-        <h3>Numéro de téléphone</h3>
-        <p>{{$information->noTelephoneContact}}</p>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="contact-email">
-        <i class="bi bi-envelope"></i>
-        <h3>Email</h3>
-        <p><a href="mailto:{{$information->courrielContact}}">{{$information->courrielContact}}</a></p>
-      </div>
-    </div>
-
-  </div>
 
   <div class="form">
     <form action="forms/contact.php" method="post" role="form" class="php-email-form">
