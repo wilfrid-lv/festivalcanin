@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InformationsController;
 use App\Http\Controllers\PartenairesController;
+use App\Http\Controllers\GalerieController;
 
 
 /*
@@ -35,7 +36,7 @@ Route::get('/welcome', function () {
 
 Route::get('/', [InformationsController::class, 'accueil']);
 Route::get('/partenaires', [PartenairesController::class, 'partenaires']);
-
+Route::get('/galerie', [GalerieController::class, 'Galerie'])->name('galerie');
 
 Route::get('/footer', function () {
     return view('partials.footer');
@@ -61,9 +62,6 @@ Route::get('/horaire', function () {
     return view('horaire');
 });
 
-Route::get('/galerie', function () {
-    return view('galerie');
-});
 
 Route::get('/partenaires', function () {
     return view('partenaires');
