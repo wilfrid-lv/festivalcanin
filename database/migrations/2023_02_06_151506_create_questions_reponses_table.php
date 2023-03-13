@@ -48,6 +48,13 @@ class CreateQuestionsReponsesTable extends Migration
                 'reponse' => 'Un chien est un animal domestique qui est considéré comme un membre de la famille. Il s\'agit d\'un animal qui est très affectueux et qui est très attaché à son maître.'
             )
         );
+
+        DB::table('QuestionsReponses')->insert(
+            array(
+                'question' => 'Qu\'est-ce qu\'un festival?',
+                'reponse' => 'Un festival est un événement qui est organisé pour célébrer un événement particulier. Il s\'agit d\'un événement qui est très populaire et qui est très apprécié par les gens.'
+            )
+        );
     }
 
     /**
