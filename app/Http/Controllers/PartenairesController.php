@@ -47,14 +47,8 @@ class PartenairesController extends Controller
         $nouveauPartenaire->niveau_id = $request->input('niveau');
         $nouveauPartenaire->lien = $request->input('lien');
         $nouveauPartenaire->imagePath = $request->input('imagePath');
-        dd($nouveauPartenaire);
         $nouveauPartenaire->save();
-        if (!empty($request->nom) && !empty($request->niveau) && !empty($request->lien) && !empty($request->imagePath)) {
-            return redirect()->route('admin.partenaire.ajouter')->with('message', 'Le partenaire a été ajouté avec succès.');
-        }
-        else {
-            return back()->withInput()->with('error', 'Tous les champs sont obligatoires.');
-        }
+        return redirect()->route('admin.partenaire.lister')->with('message', 'Le partenaire a été ajouté avec succès.');
         /*return view('admin/ajouter-partenaire')/*->with('lesNiveaux', $lesNiveaux)*/;
         //return redirect()->route('admin.partenaire.ajouter')/*->with('message', ' ajouté.')*/;
 

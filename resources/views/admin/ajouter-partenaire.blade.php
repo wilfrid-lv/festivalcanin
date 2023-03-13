@@ -198,7 +198,8 @@
                                             <div class="col-sm-10">
                                                 <select class="form-select" id="niveau" name="niveau" required>
                                                     <option selected disabled value="niveau">Aucun</option>
-                                                    @foreach ($niveau as $unNiveau)<option>{{$unNiveau->nom}}</option>
+                                                    @foreach ($niveau as $unNiveau)
+                                                        <option value="{{$unNiveau->id}}">{{$unNiveau->nom}}</option>
                                                     @endforeach
                                                 </select>
                                                 <div class="invalid-feedback">
