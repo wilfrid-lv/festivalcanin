@@ -33,9 +33,9 @@ class Information extends Model
 {
 	protected $table = 'Informations';
 
-	protected $casts = [
-		'dateDebut' => 'date',
-		'dateFin' => 'date'
+	protected $dates = [
+		'dateDebut',
+		'dateFin'
 	];
 
 	protected $fillable = [

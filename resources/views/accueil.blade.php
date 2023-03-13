@@ -211,7 +211,7 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
-        <a href="{{route('galerie')}}" class="link">Voir plus</a>
+        <a href="" class="link">Voir plus</a>
 
     </section><!-- End Gallery Section -->
 

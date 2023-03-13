@@ -27,8 +27,8 @@ class FailedJob extends Model
 	protected $table = 'failed_jobs';
 	public $timestamps = false;
 
-	protected $casts = [
-		'failed_at' => 'date'
+	protected $dates = [
+		'failed_at'
 	];
 
 	protected $fillable = [

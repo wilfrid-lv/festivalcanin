@@ -32,8 +32,11 @@ class Activite extends Model
 	protected $table = 'Activites';
 
 	protected $casts = [
-		'dateHeure' => 'date',
 		'typeActivite_id' => 'int'
+	];
+
+	protected $dates = [
+		'dateHeure'
 	];
 
 	protected $fillable = [
