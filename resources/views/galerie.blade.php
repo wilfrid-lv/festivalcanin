@@ -1,5 +1,9 @@
 @include('partials.header')
 @extends('layouts.master')
+@include('layouts.css')
+@section('title', 'Page Title')
+
+
 @section("content")
         <div class="container" data-aos="fade-up">
             <div class="section-title">

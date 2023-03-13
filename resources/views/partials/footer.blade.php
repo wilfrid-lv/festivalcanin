@@ -14,11 +14,11 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Liens</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="/acceuil">Accueil</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="/aPropos">À propos</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="/exposants">Nos exposants</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="/horaire">Horaire</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="/contact">Contact</a></li>
+                <li><a class="nav-link scrollto" href="#hero">Accueil</a></li>
+                <li><a class="nav-link scrollto" href="#about">À propos</a></li>
+                <li><a class="nav-link scrollto" href="#speakers">Nos exposants</a></li>
+                <li><a class="nav-link scrollto" href="#schedule">Horaire</a></li>
+                <li><a class="nav-link scrollto" href="#gallery">Galerie</a></li>
             </ul>
           </div>
 
@@ -35,9 +35,8 @@
               <a href="#" class="google-plus"><i class="bi bi-instagram"></i></a>
               <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
-
           </div>
-
+          </div>
         </div>
       </div>
     </div>
