@@ -85,7 +85,9 @@ Route::get('/admin/modifierInfo', function () {
 });
 
 
-/*Route::get('/admin/ajouterPartenaire', [PartenairesController::class, 'ajouter'])->name('admin.partenaire.ajouter');*/
+
+
+Route::get('/admin/afficherPartenaire', [PartenairesController::class, 'afficher'])->name('admin.partenaire.afficher');
 Route::post('/admin/ajouterPartenaire', [PartenairesController::class, 'ajouter'])->name('admin.partenaire.ajouter');
 Route::get('/admin/listerPartenaires', [PartenairesController::class, 'lister'])->name('admin.partenaire.lister');
 

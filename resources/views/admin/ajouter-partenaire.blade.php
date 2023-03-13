@@ -196,8 +196,8 @@
                                         <div class="row mb-3">
                                             <label for="niveau_id" class="col-sm-2 col-form-label">Niveau</label>
                                             <div class="col-sm-10">
-                                                <select class="form-select" id="niveau_id" required>
-                                                    <option selected disabled value="niveau_id">Aucun</option>
+                                                <select class="form-select" id="niveau" name="niveau" required>
+                                                    <option selected disabled value="niveau">Aucun</option>
                                                     @foreach ($niveau as $unNiveau)<option>{{$unNiveau->nom}}</option>
                                                     @endforeach
                                                 </select>
@@ -214,7 +214,12 @@
                                         </div>
                                         <div class="row mb-3">
                                             <label for="imagePath" class="col-sm-2 col-form-label">Logo</label>
+
                                             <div class="col-sm-10">
+                                                <input class="form-control" type="text" placeholder="Le lien vers le logo" id="imagePath" value="" name="imagePath">
+                                            </div>
+
+                                            <!-- <div class="col-sm-10">
                                                 <form action="#" class="dropzone">
                                                     <div class="fallback">
                                                         <input name="file" type="file" multiple="multiple">
@@ -226,11 +231,11 @@
                                                         <h4>Déposer votre photo.</h4>
                                                     </div>
                                                 </form>
-                                            </div>
+                                            </div> -->
                                         </div>
                                         <div class="mb-0">
                                             <div>
-                                                <button type="submit" class="btn btn-primary waves-effect waves-light me-1" action="/admin/ajouterPartenaire">
+                                                <button type="submit" class="btn btn-primary waves-effect waves-light me-1" ">
                                                     Enregistrer
                                                 </button>
                                                 <button type="reset" class="btn btn-secondary waves-effect">

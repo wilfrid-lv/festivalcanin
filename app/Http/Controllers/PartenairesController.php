@@ -19,12 +19,20 @@ class PartenairesController extends Controller
     }
 
 
-    public function ajouter(Request $request)
+    public function afficher()
     {
         $lesPartenaires = Partenaire::all();
         $niveau = Niveau::all();
         return view('admin/ajouter-partenaire')->with('lesPartenaires', $lesPartenaires)
-                                                ->with('niveau', $niveau);
+                                                    ->with('niveau', $niveau);
+
+    }
+    public function ajouter(Request $request): \Illuminate\Http\RedirectResponse
+    {
+        //$lesPartenaires = Partenaire::all();
+        //$niveau = Niveau::all();
+        //return view('admin/ajouter-partenaire')->with('lesPartenaires', $lesPartenaires)
+        //                                        ->with('niveau', $niveau);
 
         /*$this->validate($request, [*/
         $request->validate([
@@ -39,11 +47,18 @@ class PartenairesController extends Controller
         $nouveauPartenaire->niveau_id = $request->input('niveau');
         $nouveauPartenaire->lien = $request->input('lien');
         $nouveauPartenaire->imagePath = $request->input('imagePath');
-        // $lesNiveaux = Niveau::all();
+        dd($nouveauPartenaire);
         $nouveauPartenaire->save();
+        if (!empty($request->nom) && !empty($request->niveau) && !empty($request->lien) && !empty($request->imagePath)) {
+            return redirect()->route('admin.partenaire.ajouter')->with('message', 'Le partenaire a été ajouté avec succès.');
+        }
+        else {
+            return back()->withInput()->with('error', 'Tous les champs sont obligatoires.');
+        }
         /*return view('admin/ajouter-partenaire')/*->with('lesNiveaux', $lesNiveaux)*/;
         //return redirect()->route('admin.partenaire.ajouter')/*->with('message', ' ajouté.')*/;
 
     }
 
+    //ajout fonction de Modifier partenaire
 }
