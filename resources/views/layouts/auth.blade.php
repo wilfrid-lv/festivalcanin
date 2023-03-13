@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.name', 'Laravel') }}
+                {{ config('', 'Grand Festival Canin') }}
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
@@ -42,7 +42,10 @@
                     @guest
                         @if (Route::has('login'))
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Se connecter') }}</a>
+                                <a class="nav-link"
+                                   style="cursor: pointer"
+                                   data-toggle="modal"
+                                   data-target="#loginModal">{{ __('Se connecter') }}</a>
                             </li>
                         @endif
 
@@ -79,5 +82,12 @@
         @yield('content')
     </main>
 </div>
+
+@include('partials.login')
+@include('partials.register')
+
+<script src="{{ asset('js/app.js') }}"></script>
+@yield('scripts')
+
 </body>
 </html>

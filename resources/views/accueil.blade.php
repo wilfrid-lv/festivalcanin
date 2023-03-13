@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-@include('layouts.css')
 
-@section('title', 'Page Title')
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Festival Canin de Dégelis</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
 
 
-<script>
-    const dateLaunch = new Date("{{$information->dateDebut}}");
-    const dateFin = new Date("{{$information->dateFin}}");
-</script>
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" type="text/css" href="{{ asset('template/assets/vendor/aos/aos.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('template/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('template/assets/vendor/swiper/swiper-bundle.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('template/assets/vendor/glightbox/css/glightbox.min.css') }}">
+
+  <link rel="stylesheet" type="text/css" href="{{ asset('template/assets//css/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('template/assets//vendor/bootstrap/css/bootstrap.min.css') }}">
+
+</head>
 
 <body>
 
@@ -18,7 +36,6 @@
   <section id="hero">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
       <h1 class="mb-4 pb-0">Festival <br><span>Canin</span> de Dégelis</h1>
-        <h1 id="countdown"></h1>
       <a href="https://www.youtube.com/watch?v=yUQY0pD35Go" class="glightbox play-btn mb-4"></a>
       <a href="#about" class="about-btn scrollto">À propos du Festival</a>
     </div>
@@ -72,6 +89,19 @@
           <h2>Programmation de l'évènement</h2>
             <p>L'horaire affiché est identique pour les deux journées </p>
         </div>
+
+        <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item">
+            <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Day 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Day 2</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#day-3" role="tab" data-bs-toggle="tab">Day 3</a>
+          </li> -->
+        </ul>
+
 
         <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
 
@@ -258,6 +288,7 @@
   </main><!-- End #main -->
 
   @include('partials.footer')
+  @include('partials.modal')
 
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

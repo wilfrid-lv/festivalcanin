@@ -38,4 +38,6 @@ class LoginController extends Authenticatable
     {
         $this->middleware('guest')->except('logout');
     }
+
+
 }

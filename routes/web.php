@@ -3,9 +3,6 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InformationsController;
-use App\Http\Controllers\PartenairesController;
-use App\Http\Controllers\GalerieController;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -62,6 +59,9 @@ Route::get('/horaire', function () {
     return view('horaire');
 });
 
+Route::get('/galerie', function () {
+    return view('galerie');
+});
 
 Route::get('/partenaires', function () {
     return view('partenaires');
@@ -78,12 +78,13 @@ Route::get('/contact', function () {
 */
 
 Route::get('/admin/articles', function () {
-    return view('admin/arcticles');
-});
+    return view('admin/arcticles');})->middleware('auth:admin');
+
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 /*
 |--------------------------------------------------------------------------
