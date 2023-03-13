@@ -7,7 +7,6 @@
 {{--Include the modal login and register--}}
 
 @include('partials.login')
-@include('partials.register')
 
 {{--Script modal login--}}
 <script src="{{ asset('js/app.js') }}"></script>
