@@ -23,7 +23,7 @@
         @endif
     </head>
 
-    
+
     <body data-topbar="dark">
         <div id="layout-wrapper">
 
@@ -80,7 +80,7 @@
                                 <i class="ri-settings-2-line"></i>
                             </button>
                         </div>
-            
+
                     </div>
                 </div>
             </header>
@@ -112,7 +112,7 @@
                                     <span>Utilisateurs</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="Utilisateurs/liste-utilisateur.html">Lister</a></li> 
+                                    <li><a href="Utilisateurs/liste-utilisateur.html">Lister</a></li>
                                     <li><a href="Utilisateurs/ajouter-utilisateur.html">Ajouter</a></li>
                                     <li><a href="Utilisateurs/modifier-utilisateur.html">Modifier</a></li>
                                     <li><a href="Utilisateurs/profil-utilisateur.html">Profil</a></li>
@@ -124,7 +124,7 @@
                                     <span>Equipe</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="Equipe/liste-equipe.html">Lister</a></li> 
+                                    <li><a href="Equipe/liste-equipe.html">Lister</a></li>
                                     <li><a href="Equipe/ajouter-equipe.html">Ajouter</a></li>
                                     <li><a href="Equipe/modifier-equipe.html">Modifier</a></li>
                                     <li><a href="Equipe/profil-equipe.html">Profil</a></li>
@@ -136,7 +136,7 @@
                                     <span>Activités</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="Activites/liste-activite.html">Lister</a></li> 
+                                    <li><a href="Activites/liste-activite.html">Lister</a></li>
                                     <li><a href="Activites/ajouter-activite.html">Ajouter</a></li>
                                     <li><a href="Activites/modifier-activite.html">Modifier</a></li>
                                 </ul>
@@ -147,7 +147,7 @@
                                     <span>Articles</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="Articles/liste-article.html">Lister</a></li> 
+                                    <li><a href="Articles/liste-article.html">Lister</a></li>
                                     <li><a href="Articles/ajouter-article.html">Ajouter</a></li>
                                     <li><a href="Articles/modifier-article.html">Modifier</a></li>
                                 </ul>
@@ -174,84 +174,96 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Modifier les informations de l'événement</h4>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="row mb-3">
-                                                    <label for="dateDebut" class="col-sm-4 col-form-label">Date de début</label>
-                                                    <div class="col-sm-5">
-                                                        <input class="form-control" type="date" id="dateDebut">
-                                                    </div>
-                                                </div>
-                                            </div>   
-                                            <div class="col-md-6">
-                                                <div class="row mb-3">
-                                                    <label for="dateFin" class="col-sm-2 col-form-label">Date de fin</label>
-                                                    <div class="col-sm-5">
-                                                        <input class="form-control" type="date" id="dateFin" value="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label for="adresse" class="col-sm-2 col-form-label">Adresse</label>
-                                            <div class="col-sm-10">
-                                                <input class="form-control" type="text" placeholder="Adresse" id="adresse" value="">
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label for="adresse" class="col-sm-2 col-form-label">Description</label>
-                                            <div class="col-sm-10">
-                                                <form method="post">
-                                                    <textarea required class="form-control" rows="5" placeholder="Description"></textarea>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label for="courriel" class="col-sm-2 col-form-label">Courriel</label>
-                                            <div class="col-sm-10">
-                                                <input class="form-control" type="email" placeholder="Courriel" id="courriel" value="">
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label for="lieu" class="col-sm-2 col-form-label">Lieu</label>
-                                            <div class="col-sm-10">
-                                                <input class="form-control" type="text" placeholder="Lieu de l'événement" id="lieu" value="">
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label for="adresse" class="col-sm-2 col-form-label">Description Localisation</label>
-                                            <div class="col-sm-10">
-                                                <form method="post">
-                                                    <textarea required class="form-control" rows="5" placeholder="Description Localisation"></textarea>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label for="lienVideo" class="col-sm-2 col-form-label">Lien vidéo</label>
-                                            <div class="col-sm-10">
-                                                <input class="form-control" type="text" placeholder="Le lien vers une vidéo de l'événement" id="lienVideo" value="">
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label for="adresse" class="col-sm-2 col-form-label">Ajouter une image</label>
-                                            <div class="col-sm-10">
-                                                <form action="#" class="dropzone">
-                                                    <div class="fallback">
-                                                        <input name="file" type="file" multiple="multiple">
-                                                    </div>
-                                                    <div class="dz-message needsclick">
-                                                        <div class="mb-3">
-                                                            <i class="display-4 text-muted ri-upload-cloud-2-line"></i>
+                                    <form class="container" method="post" action="/admin/modifierInfo">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Modifier les informations de l'événement</h4>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="row mb-3">
+                                                        <label for="dateDebut" class="col-sm-4 col-form-label">Date de début</label>
+                                                        <div class="col-sm-5">
+                                                            <input class="form-control" type="date" id="dateDebut">
                                                         </div>
-                                                        
-                                                        <h4>Drop files here or click to upload.</h4>
                                                     </div>
-                                                </form>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row mb-3">
+                                                        <label for="dateFin" class="col-sm-2 col-form-label">Date de fin</label>
+                                                        <div class="col-sm-5">
+                                                            <input class="form-control" type="date" id="dateFin" value="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="adresse" class="col-sm-2 col-form-label">Adresse</label>
+                                                <div class="col-sm-10">
+                                                    <input class="form-control" type="text" placeholder="Adresse" id="adresse" value="">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="adresse" class="col-sm-2 col-form-label">Description</label>
+                                                <div class="col-sm-10">
+                                                    <form method="post">
+                                                        <textarea required class="form-control" rows="5" placeholder="Description"></textarea>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="courriel" class="col-sm-2 col-form-label">Courriel</label>
+                                                <div class="col-sm-10">
+                                                    <input class="form-control" type="email" placeholder="Courriel" id="courriel" value="">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="lieu" class="col-sm-2 col-form-label">Lieu</label>
+                                                <div class="col-sm-10">
+                                                    <input class="form-control" type="text" placeholder="Lieu de l'événement" id="lieu" value="">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="adresse" class="col-sm-2 col-form-label">Description Localisation</label>
+                                                <div class="col-sm-10">
+                                                    <form method="post">
+                                                        <textarea required class="form-control" rows="5" placeholder="Description Localisation"></textarea>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="lienVideo" class="col-sm-2 col-form-label">Lien vidéo</label>
+                                                <div class="col-sm-10">
+                                                    <input class="form-control" type="text" placeholder="Le lien vers une vidéo de l'événement" id="lienVideo" value="">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="adresse" class="col-sm-2 col-form-label">Ajouter une image</label>
+                                                <div class="col-sm-10">
+                                                    <form action="#" class="dropzone">
+                                                        <div class="fallback">
+                                                            <input name="file" type="file" multiple="multiple">
+                                                        </div>
+                                                        <div class="dz-message needsclick">
+                                                            <div class="mb-3">
+                                                                <i class="display-4 text-muted ri-upload-cloud-2-line"></i>
+                                                            </div>
+
+                                                            <h4>Drop files here or click to upload.</h4>
+                                                        </div>
+                                                    </form>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                        <div class="mb-0">
+                                            <div>
+                                                <button type="submit" class="btn btn-primary waves-effect waves-light me-1">
+                                                    Enregistrer
+                                                </button>
+                                                <button type="reset" class="btn btn-secondary waves-effect">
+                                                    Annuler
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -262,7 +274,7 @@
             <div class="right-bar">
                 <div data-simplebar class="h-100">
                     <div class="rightbar-title d-flex align-items-center px-3 py-4">
-                
+
                         <h5 class="m-0 me-2">Settings</h5>
 
                         <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
@@ -283,7 +295,7 @@
                             <input class="form-check-input theme-choice" type="checkbox" id="light-mode-switch" checked>
                             <label class="form-check-label" for="light-mode-switch">Light Mode</label>
                         </div>
-        
+
                         <div class="mb-2">
                             <img src="../template/assets/assets/images/layouts/layout-2.jpg" class="img-fluid img-thumbnail" alt="layout-2">
                         </div>
@@ -291,7 +303,7 @@
                             <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch" data-bsStyle="../assets/assets/css/bootstrap-dark.min.css" data-appStyle="../assets/assets/css/app-dark.min.css">
                             <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
                         </div>
-        
+
                         <div class="mb-2">
                             <img src="../template/assets/assets/images/layouts/layout-3.jpg" class="img-fluid img-thumbnail" alt="layout-3">
                         </div>
@@ -300,7 +312,7 @@
                             <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
                         </div>
 
-                
+
                     </div>
 
                 </div> <!-- end slimscroll-menu-->
@@ -323,7 +335,7 @@
             <!-- init js -->
             <script src="public/template/assets/js/pages/form-editor.init.js"></script>
             <script src="public/template/assets/js/pages/form-element.init.js"></script>
-            
+
 
             <script src="public/template/assets/js/app.js"></script>
         </div>

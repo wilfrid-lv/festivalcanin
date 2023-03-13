@@ -26,7 +26,7 @@
 
     </head>
 
-    
+
     <body data-topbar="dark">
         <div id="layout-wrapper">
 
@@ -85,7 +85,7 @@
                                 <i class="ri-settings-2-line"></i>
                             </button>
                         </div>
-            
+
                     </div>
                 </div>
             </header>
@@ -179,7 +179,9 @@
 
             <div class="main-content">
                 <div class="page-content"></div>
-                    <div class="container">
+                    <form class="container" method="post" action="/admin/ajouterPartenaire">
+
+                        @csrf
                         <div class="row">
                             <div class="col-12">
                                 <div class="card">
@@ -188,7 +190,7 @@
                                         <div class="row mb-3">
                                             <label for="nom" class="col-sm-2 col-form-label">Nom</label>
                                             <div class="col-sm-10">
-                                                <input class="form-control" type="text" id="nom">
+                                                <input class="form-control" type="text" id="nom" name="nom">
                                             </div>
                                         </div>
                                         <div class="row mb-3">
@@ -196,8 +198,7 @@
                                             <div class="col-sm-10">
                                                 <select class="form-select" id="niveau_id" required>
                                                     <option selected disabled value="niveau_id">Aucun</option>
-                                                    @foreach ($niveau as $unNiveau) 
-                                                    <option>{{$unNiveau->nom}}</option>
+                                                    @foreach ($niveau as $unNiveau)<option>{{$unNiveau->nom}}</option>
                                                     @endforeach
                                                 </select>
                                                 <div class="invalid-feedback">
@@ -206,13 +207,13 @@
                                             </div>
                                         </div>
                                         <div class="row mb-3">
-                                            <label for="lien" class="col-sm-2 col-form-label">Lien de leur site</label>
+                                            <label for="lien" class="col-sm-2 col-form-label">Lien</label>
                                             <div class="col-sm-10">
-                                                <input class="form-control" type="text" placeholder="Le lien vers leur site web" id="lien" value="">
+                                                <input class="form-control" type="text" placeholder="Le lien vers leur site web" id="lien" value="" name="lien">
                                             </div>
                                         </div>
                                         <div class="row mb-3">
-                                            <label for="imagePath" class="col-sm-2 col-form-label">Ajouter leur logo</label>
+                                            <label for="imagePath" class="col-sm-2 col-form-label">Logo</label>
                                             <div class="col-sm-10">
                                                 <form action="#" class="dropzone">
                                                     <div class="fallback">
@@ -222,34 +223,34 @@
                                                         <div class="mb-3">
                                                             <i class="display-4 text-muted ri-upload-cloud-2-line"></i>
                                                         </div>
-                                                        
-                                                        <h4>Déposer vos photo.</h4>
+                                                        <h4>Déposer votre photo.</h4>
                                                     </div>
                                                 </form>
                                             </div>
                                         </div>
                                         <div class="mb-0">
-                                                <div>
-                                                    <button type="submit" class="btn btn-primary waves-effect waves-light me-1">
-                                                        Enregistrer
-                                                    </button>
-                                                    <button type="reset" class="btn btn-secondary waves-effect">
-                                                        Annuler
-                                                    </button>
-                                                </div>
+                                            <div>
+                                                <button type="submit" class="btn btn-primary waves-effect waves-light me-1" action="/admin/ajouterPartenaire">
+                                                    Enregistrer
+                                                </button>
+                                                <button type="reset" class="btn btn-secondary waves-effect">
+                                                    Annuler
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        @csrf
+                    </form>
                 </div>
             </div>
             <!-- Right Sidebar -->
             <div class="right-bar">
                 <div data-simplebar class="h-100">
                     <div class="rightbar-title d-flex align-items-center px-3 py-4">
-                
+
                         <h5 class="m-0 me-2">Settings</h5>
 
                         <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
@@ -270,7 +271,7 @@
                             <input class="form-check-input theme-choice" type="checkbox" id="light-mode-switch" checked>
                             <label class="form-check-label" for="light-mode-switch">Light Mode</label>
                         </div>
-        
+
                         <div class="mb-2">
                             <img src="assets/images/layouts/layout-2.jpg" class="img-fluid img-thumbnail" alt="layout-2">
                         </div>
@@ -278,7 +279,7 @@
                             <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch" data-bsStyle="assets/css/bootstrap-dark.min.css" data-appStyle="assets/css/app-dark.min.css">
                             <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
                         </div>
-        
+
                         <div class="mb-2">
                             <img src="assets/images/layouts/layout-3.jpg" class="img-fluid img-thumbnail" alt="layout-3">
                         </div>
@@ -287,7 +288,7 @@
                             <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
                         </div>
 
-                
+
                     </div>
 
                 </div> <!-- end slimscroll-menu-->

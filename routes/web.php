@@ -84,10 +84,9 @@ Route::get('/admin/modifierInfo', function () {
     return view('admin/modifier-information');
 });
 
-// Route::get('/admin/ajouterPartenaire', function () {
-//     return view('admin/ajouter-partenaire');
-// });
-Route::get('/admin/ajouterPartenaire', [PartenairesController::class, 'ajouter'])->name('admin.partenaire.ajouter');
+
+/*Route::get('/admin/ajouterPartenaire', [PartenairesController::class, 'ajouter'])->name('admin.partenaire.ajouter');*/
+Route::post('/admin/ajouterPartenaire', [PartenairesController::class, 'ajouter'])->name('admin.partenaire.ajouter');
 Route::get('/admin/listerPartenaires', [PartenairesController::class, 'lister'])->name('admin.partenaire.lister');
 
 Route::get('/admin/listerUtilisateurs', [UtilisateursController::class, 'lister']);
