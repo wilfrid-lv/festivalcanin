@@ -53,7 +53,7 @@
           <li><a class="nav-link scrollto" href="#speakers">Nos exposants</a></li>
             <li><a class="nav-link scrollto" href="/activites">Activités</a></li>
             <li><a class="nav-link scrollto" href="#schedule">Horaire</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Gallerie</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Galerie</a></li>
           <li><a class="nav-link scrollto" href="#supporters">Partenaires</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
@@ -123,6 +123,7 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Programmation de l'évènement</h2>
+            <p>L'horaire affiché est identique pour les deux journées </p>
         </div>
 
         <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
@@ -255,7 +256,7 @@
                           <div class="col-lg-3 col-md-4 col-xs-6">
                       @endif
                           <a target="_blank" href="{{$partenaire->lien}}">
-                              <div class="supporter-logo">
+                              <div class="supporter-logo border">
                                   <img src="{{asset($partenaire->imagePath)}}" class="img-fluid" alt="{{$partenaire->nom}}">
                               </div>
                           </a>

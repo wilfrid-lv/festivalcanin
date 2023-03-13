@@ -1121,9 +1121,11 @@ h6 {
   padding: 60px 0;
 }
 
-#supporters .supporters-wrap {
-  border-top: 1px solid #e0e5fa;
-  border-left: 1px solid #e0e5fa;
+!important #supporters .supporters-wrap {
+  /*border-top: 1px solid #e0e5fa;
+  border-left: 1px solid #e0e5fa;*/
+    border-top: none;
+    border-left: none;
   margin-bottom: 30px;
 }
 

@@ -1,5 +1,5 @@
-@extends('layouts.master')
 @include('partials.header')
+@extends('layouts.master')
 @section("content")
         <div class="container" data-aos="fade-up">
             <div class="section-title">
