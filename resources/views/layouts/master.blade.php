@@ -6,10 +6,10 @@
 
     <!-- TITLE -->
 
-    <title> @yield('title') | Accueil</title>
+    <title> Festival | @yield('title')</title>
 
     <!-- Favicons -->
-    <link href="template/assets/img/favicon.png" rel="icon">
+    <link href="template/assets/img/favicon.ico" rel="icon">
     <link href="template/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->

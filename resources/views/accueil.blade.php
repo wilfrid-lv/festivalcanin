@@ -2,6 +2,8 @@
 <html lang="en">
 @include('layouts.css')
 
+@section('title', 'Page Title')
+
 
 <script>
     const dateLaunch = new Date("{{$information->dateDebut}}");
@@ -10,7 +12,7 @@
 
 <body>
 
-@include('partials.header')
+  @include('partials.header')
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
