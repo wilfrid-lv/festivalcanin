@@ -93,6 +93,10 @@ Route::get('/admin/listerPartenaires', [PartenairesController::class, 'lister'])
 
 Route::get('/admin/listerUtilisateurs', [UtilisateursController::class, 'lister']);
 
+//route pour tester l'upload d'image
+Route::controller(PartenairesController::Controller::class)->group(function(){
+    Route::get('/image-upload', 'index')->name('image.form');
+    Route::post('/upload-image', 'storeImage')->name('image.store');
 
 
 

@@ -216,14 +216,15 @@
                                         <div class="row mb-3">
                                             <label for="imagePath" class="col-sm-2 col-form-label">Logo</label>
 
-                                            <div class="col-sm-10">
-                                                <input class="form-control" type="text" placeholder="Le lien vers le logo" id="imagePath" value="" name="imagePath">
-                                            </div>
-
+                                            <!-- imagePath mis en texte pour le moment-->
                                             <!-- <div class="col-sm-10">
-                                                <form action="#" class="dropzone">
+                                                <input class="form-control" type="text" placeholder="Le lien vers le logo" id="imagePath" value="" name="imagePath">
+                                            </div> -->
+
+                                             <div class="col-sm-10">
+                                                <form action="{{ route('admin.partenaire.ajouter') }}" class="dropzone" method="post" enctype="multipart/form-data">
                                                     <div class="fallback">
-                                                        <input name="file" type="file" multiple="multiple">
+                                                        <input name="imagePath" type="file" multiple="multiple">
                                                     </div>
                                                     <div class="dz-message needsclick">
                                                         <div class="mb-3">
@@ -232,7 +233,7 @@
                                                         <h4>Déposer votre photo.</h4>
                                                     </div>
                                                 </form>
-                                            </div> -->
+                                            </div>
                                         </div>
                                         <div class="mb-0">
                                             <div>
