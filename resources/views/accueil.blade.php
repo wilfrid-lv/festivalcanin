@@ -194,7 +194,8 @@
         </div>
           @foreach($niveaux as $niveau)
               @if($niveau->partenaires->count() > 0)
-              <h3>{{$niveau->nom}}</h3>
+              <!--<h3>{{$niveau->nom}}</h3>-->
+              <img src="images/accueil/patte{{$niveau->nom}}.png" alt="{{$niveau->nom}}" class="img-fluid m-2" style="height: 100px">
                   <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
                   @foreach($niveau->partenaires as $partenaire)
                       @if($niveau->nom == "Or")
