@@ -20,7 +20,7 @@ class InformationsController extends Controller
         //order by dateHeure
         $activites = Activite::orderBy('dateHeure', 'asc')->get();
         $questionsReponses = QuestionsReponse::all();
-        $fichiers = Storage::disk('public')->files('galerie');
+        $fichiers = Storage::disk('public')->files('images/galerie');
         return view('accueil', ['information' => $information,
                                      'niveaux' => $niveaux,
                                      'activites' => $activites,
